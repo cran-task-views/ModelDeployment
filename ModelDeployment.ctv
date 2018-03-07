@@ -1,0 +1,83 @@
+<CRANTaskView>
+
+   <name>ModelDeployment</name>
+   <topic>Model Deployment in R</topic>
+   <maintainer email="terrytangyuan@gmail.com">Yuan Tang</maintainer>
+   <version>2018-03-07</version>
+
+  <info>
+    <p>
+      This CRAN task view contains a list of packages, grouped by topic, that
+      provides functionalities to streamline the process of deploying models to 
+      scoring or inferencing on new data on various environments, such as 
+      mobile devices, edge devices, cloud, GPUs, etc.
+    </p>
+    
+    <p>
+      Deploying models is often challenging due to the following reasons:
+    </p>
+    
+    <ul>
+      <li>
+        It involves deploying models on heterogenous environments, e.g. edge devices, 
+        mobile devices, GPUs, etc.
+      </li>
+      <li>
+        It is hard to compress the model to very small size that could fit on devices 
+        with limited storage while avoiding high overhead to decompress it before model inference.
+      </li>
+      <li>
+        It is hard to make sure the trained model can process new data records within limited memory.
+      </li>
+      <li>
+        Not all environments have good network connectivity so sometimes cloud solutions may not 
+        satisfy the requirements.
+      </li>
+
+    </ul>
+
+    <p>
+      Unless otherwise mentioned, all packages presented with hyperlinks 
+      are available from CRAN, the Comprehensive R Archive Network. 
+    </p>
+    <p>
+      Many of the areas discussed in this Task View are undergoing rapid
+      change in industries and academia. Please send suggestions for additions and extensions for this task
+      view to the <a href="mailto:terrytangyuan@gmail.com">task view maintainer</a>.
+    </p>
+
+    <p>
+    <strong>Mobile/Edge Devices</strong>
+    This section includes packages that provides functionalities to export the trained
+model to an artifact that could fit in small devices such as mobile devices
+(e.g. Android, iOS) and edge devices (Rasberri Pi). These packages are built
+based on different model format.
+
+Predictive Model Markup Language (PMML) is an XML-based language which
+provides a way for applications to define statistical and data mining models
+and to share models between PMML compliant applications. The following packages
+are based on PMML:
+    </p>
+    <ul>
+      <li>The <pkg>pmml</pkg> package provides the main interface to PMML.</li>
+      <li>The <pkg>pmmlTransformations</pkg> package allows for data to be transformed before using it to
+construct models. Builds structures to allow functions in the PMML package to
+output transformation details in addition to the model in the resulting PMML file.
+      </li>
+      <li>The <pkg>rattle</pkg> package allows to load data from a CSV file (or via ODBC), transform and explore the data, build and evaluate models, and export models as PMML or as scores.
+      </li>
+    </ul>
+
+  </info>
+
+  <packagelist>
+    <pkg>pmml</pkg>
+    <pkg>pmmlTransformations</pkg>
+    <pkg>rattle</pkg>
+  </packagelist>
+
+  <links>
+    <a href="https://github.com/terrytangyuan/ctv-model-deployment">GitHub repository for this Task View</a>
+  </links>
+
+</CRANTaskView>
