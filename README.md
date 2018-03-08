@@ -13,13 +13,15 @@ This CRAN task view contains a list of packages, grouped by topic, that provides
 Model deployment is often challenging due to various reasons. Some example challenges are:
 
 -   It involves deploying models on heterogenous environments, e.g. edge devices, mobile devices, GPUs, etc.
--   It is hard to compress the model to very small size that could fit on devices with limited storage while keeping the same precision and small overhead to load the model before inference.
+-   It is hard to compress the model to very small size that could fit on devices with limited storage while keeping the same precision and minimizing the overhead to load the model for inference.
 -   Deployed models sometimes need to process new data records within limited memory on small devices.
 -   Many deployment environments have bad network connectivity so sometimes cloud solutions may not meet the requirements.
 -   There's interest in stronger user data privacy paradigms where user data does not need to leave the mobile device.
 -   There's growing demand to perform on-device model-based data filtering before collecting the data.
 
-Many of the areas discussed in this task view are undergoing rapid changes in industries and academia. Please send suggestions for this task view to the [task view maintainer](mailto:terrytangyuan@gmail.com).
+Many of the areas discussed in this Task View are undergoing rapid changes in industries and academia. Please send any suggestions to the [task view maintainer](mailto:terrytangyuan@gmail.com) or submit a pull request or issue to the [Github repository of this task view](https://github.com/terrytangyuan/ctv-model-deployment).
+
+Suggestions and corrections by Achim Zeileis and Dirk Eddelbuettel (as well as others I may have forgotten to add here) are gratefully acknowledged.
 
 **Deployment through Different Types of Artifacts**
 

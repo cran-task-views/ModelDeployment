@@ -23,7 +23,7 @@
         mobile devices, GPUs, etc.
       </li>
       <li>
-        It is hard to compress the model to very small size that could fit on devices with limited storage while keeping the same precision and small overhead to load the model before inference.
+        It is hard to compress the model to very small size that could fit on devices with limited storage while keeping the same precision and minimizing the overhead to load the model for inference.
       </li>
       <li>
         Deployed models sometimes need to process new data records within limited memory on small devices.
@@ -42,9 +42,17 @@
     </ul>
 
     <p>
-      Many of the areas discussed in this task view are undergoing rapid
-      changes in industries and academia. Please send suggestions for this task
-      view to the <a href="mailto:terrytangyuan@gmail.com">task view maintainer</a>.
+      Many of the areas discussed in this Task View are undergoing rapid
+      changes in industries and academia. Please send any suggestions to the
+      <a href="mailto:terrytangyuan@gmail.com">task view maintainer</a> 
+      or submit a pull request or issue to the 
+      <a href="https://github.com/terrytangyuan/ctv-model-deployment">
+        Github repository of this task view
+      </a>.
+    </p>
+    
+    <p>
+      Suggestions and corrections by Achim Zeileis and Dirk Eddelbuettel (as well as others I may have forgotten to add here) are gratefully acknowledged.
     </p>
 
     <p><strong>Deployment through Different Types of Artifacts</strong></p>
