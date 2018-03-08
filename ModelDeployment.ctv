@@ -74,9 +74,9 @@ are based on PMML:
       <li>
         Plain Old Java Object (POJO) or a Model Object, Optimized (MOJO) are intended to
 be easily embeddable in any Java environment. The only compilation and runtime
-dependency for a generated model is a .jar file produced as the
+dependency for a generated model is a h2o-genmodel.jar file produced as the
 build output of these packages. The <pkg>h2o</pkg> package provides easy-to-use interface to
-build machine learning models that can then be exported as MOJO and POJO format.
+build a wide range of machine learning models, such as GLM, DRF, and XGBoost models based on <pkg>xgboost</pkg> package, which can then be exported as MOJO and POJO format. The MOJO and POJO artifacts can then be loaded by its different language bindings, e.g. Java, Scala, R, and Python. 
       </li>
       <li>
         Portable Format for Analytics (PFA) is a specification for event-based
@@ -171,6 +171,7 @@ deploy models in server based environments:
     <pkg>tensorflow</pkg>
     <pkg>tfestimators</pkg>
     <pkg>tidypredict</pkg>
+    <pkg>xgboost</pkg>
     <pkg>yhatr</pkg>
 
   </packagelist>
