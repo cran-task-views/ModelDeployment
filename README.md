@@ -63,13 +63,15 @@ produced as the build output of these packages. The
 to build machine learning models that can then be exported as MOJO and
 POJO format.
 
-[TensorFlow](https://www.tensorflow.org/) 's ExportedModel or a soon
-coming optimized version on small devices called TensorFlow Lite, which
-uses many techniques for achieving low latency such as optimizing the
-kernels for mobile apps, pre-fused activations, and quantized kernels
-that allow smaller and faster (fixed-point math) models. It enables
-on-device machine learning inference with low latency and small binary
-size. The following packages can produce models in this format:
+[TensorFlow](https://www.tensorflow.org/) ExportedModel as well as its
+optimized version [TensorFlow
+Lite](https://www.tensorflow.org/mobile/tflite/) aimed for small devices
+called, which uses many techniques for achieving low latency such as
+optimizing the kernels for mobile apps, pre-fused activations, and
+quantized kernels that allow smaller and faster (fixed-point math)
+models. It enables on-device machine learning inference with low latency
+and small binary size. The following packages can produce models in this
+format:
 
   - The [tensorflow](https://cran.r-project.org/package=tensorflow) package provides
     full access to TensorFlow API for numerical computation using data
@@ -104,7 +106,7 @@ environments:
   - The [cloudml](https://github.com/rstudio/cloudml) package provides
     functionality to easily deploy models to [Google Cloud ML
     Engine](https://cloud.google.com/ml-engine/).
-  - The [cloudml](https://github.com/rstudio/tfdeploy) package provides
+  - The [tfdeploy](https://github.com/rstudio/tfdeploy) package provides
     functions to run a local test server that supports the same REST API
     as CloudML and [RStudio
     Connect](https://www.rstudio.com/products/connect/).
