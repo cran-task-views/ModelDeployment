@@ -1,18 +1,15 @@
 # Generate .md from .ctv
 # Borrowed code from: https://github.com/eddelbuettel/ctv-hpc/blob/master/ctv2md.r
 
+library(XML)
+library(ctv)
+
 ctv <- "ModelDeployment"
 ctvfile  <- paste0(ctv, ".ctv")
 htmlfile <- paste0(ctv, ".html")
 mdfile   <- "README.md"
 
-## load packages
-suppressMessages(library(XML))          # called by ctv
-suppressMessages(library(ctv))
-
-r <- getOption("repos")                 # set CRAN mirror
-r["CRAN"] <- "https://cloud.r-project.org"
-options(repos = r)
+options(repos = c(CRAN = "http://cran.rstudio.com"))
 
 check_ctv_packages(ctvfile)
 
