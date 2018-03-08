@@ -328,6 +328,7 @@ $(document).ready(function () {
 </tr>
 </tbody>
 </table>
+<div>
 <p>This CRAN task view contains a list of packages, grouped by topic, that provides functionalities to streamline the process of deploying models to scoring or inferencing on new data on various environments, such as mobile devices, edge devices, cloud, GPUs, etc.</p>
 <p>Deploying models is often challenging due to the following reasons:</p>
 <ul>
@@ -336,20 +337,66 @@ $(document).ready(function () {
 <li>It is hard to make sure the trained model can process new data records within limited memory.</li>
 <li>Not all environments have good network connectivity so sometimes cloud solutions may not satisfy the requirements.</li>
 </ul>
-<p>Unless otherwise mentioned, all packages presented with hyperlinks are available from CRAN, the Comprehensive R Archive Network.</p>
 <p>Many of the areas discussed in this Task View are undergoing rapid change in industries and academia. Please send suggestions for additions and extensions for this task view to the <a href="mailto:terrytangyuan@gmail.com">task view maintainer</a>.</p>
-<p><strong>Mobile/Edge Devices</strong> This section includes packages that provides functionalities to export the trained model to an artifact that could fit in small devices such as mobile devices (e.g. Android, iOS) and edge devices (Rasberri Pi). These packages are built based on different model format. Predictive Model Markup Language (PMML) is an XML-based language which provides a way for applications to define statistical and data mining models and to share models between PMML compliant applications. The following packages are based on PMML:</p>
+<p><strong>Mobile/Edge Devices</strong></p>
+<p>This section includes packages that provides functionalities to export the trained model to an artifact that could fit in small devices such as mobile devices (e.g. Android, iOS) and edge devices (Rasberri Pi). These packages are built based on different model format.</p>
+<p>Predictive Model Markup Language (PMML) is an XML-based language which provides a way for applications to define statistical and data mining models and to share models between PMML compliant applications. The following packages are based on PMML:</p>
 <ul>
 <li>The <a href="https://cran.r-project.org/package=pmml">pmml</a> package provides the main interface to PMML.</li>
 <li>The <a href="https://cran.r-project.org/package=pmmlTransformations">pmmlTransformations</a> package allows for data to be transformed before using it to construct models. Builds structures to allow functions in the PMML package to output transformation details in addition to the model in the resulting PMML file.</li>
 <li>The <a href="https://cran.r-project.org/package=rattle">rattle</a> package allows to load data from a CSV file (or via ODBC), transform and explore the data, build and evaluate models, and export models as PMML or as scores.</li>
 </ul>
+<p>Plain Old Java Object (POJO) or a Model ObJect, Optimized (MOJO) are intended to be easily embeddable in any Java environment. The only compilation and runtime dependency for a generated model is a .jar file produced as the build output of these packages. The <a href="https://cran.r-project.org/package=h2o">h2o</a> package provides easy-to-use interface to build machine learning models that can then be exported as MOJO and POJO format.</p>
+<p><a href="https://www.tensorflow.org/">TensorFlow</a> ’s ExportedModel or a soon coming optimized version on small devices called TensorFlow Lite, which uses many techniques for achieving low latency such as optimizing the kernels for mobile apps, pre-fused activations, and quantized kernels that allow smaller and faster (fixed-point math) models. It enables on-device machine learning inference with low latency and small binary size. The following packages can produce models in this format:</p>
+<ul>
+<li>The <a href="https://cran.r-project.org/package=tfestimators">tfestimators</a> package provides high-level API to machine learning models as well as highly customized neural network architectures.</li>
+<li>The <a href="https://cran.r-project.org/package=keras">keras</a> package high-level API to construct different types of neural networks.</li>
+</ul>
+<p>Portable Format for Analytics (PFA) is a specification for event-based processors that perform predictive or analytic calculations and is aimed at helping smooth the transition from statistical model development to large-scale and/or online production. The <a href="https://cran.r-project.org/package=aurelius">aurelius</a> package provides tools for converting R objects and syntax into the PFA format.</p>
+<p>Additionally, the <a href="https://cran.r-project.org/package=onnx">onnx</a> package provides the interface to <a href="https://onnx.ai/">Open Neural Network Exchange (ONNX)</a> which is a standard format for models built using different frameworks (e.g. TensorFlow, MXNet, PyTorch, etc).</p>
+<p><strong>Cloud/server-based Environments</strong></p>
+<p>Many deployment environments are based on cloud/server. The following packages provides functionalities to deploy models in those types of environments:</p>
+<ul>
+<li>The <a href="https://cran.r-project.org/package=yhatr">yhatr</a> package allows to deploy, maintain, and invoke models via the <a href="https://www.yhat.com">Yhat</a> REST API.</li>
+<li>The <a href="https://github.com/rstudio/cloudml">cloudml</a> package provides functionality to easily deploy models to <a href="https://cloud.google.com/ml-engine/">Google Cloud ML Engine</a>.</li>
+<li>The <a href="https://cran.r-project.org/package=domino">domino</a> package provides R interface to <a href="https://www.dominodatalab.com/">Domino</a> CLI, a service that makes it easy to run your code on scalable hardware, with integrated version control and collaboration features designed for analytical workflows.</li>
+<li>The <a href="https://cran.r-project.org/package=tidypredict">tidypredict</a> package provides functionalities to run predictions inside database.</li>
+<li>The <a href="https://cran.r-project.org/package=AzureML">AzureML</a> package contains functions and datasets to support Azure Machine Learning. This allows you to interact with datasets, as well as publish and consume R functions as API services.</li>
+<li><a href="http://projects.revolutionanalytics.com/deployr/">DeployR Open</a> is a server-based framework for integrating R into other applications via Web Services.</li>
+<li>The <a href="https://cran.r-project.org/package=opencpu">opencpu</a> package provides a server that exposes a simple but powerful HTTP API for RPC and data interchange with R. This provides a reliable and scalable foundation for statistical services or building R web applications.</li>
+<li>Several general purpose server/client frameworks for R exist that could help deploy models in server based environments:
+<ul>
+<li>The <a href="https://cran.r-project.org/package=Rserve">Rserve</a> and <a href="https://cran.r-project.org/package=RSclient">RSclient</a> packages both provide server and client functionality for TCP/IP or local socket interfaces.</li>
+<li>The <a href="https://cran.r-project.org/package=httpuv">httpuv</a> package provides a low-level socket and protocol support for handling HTTP and WebSocket requests directly within R.</li>
+</ul></li>
+<li>Several packages offer functionality for turning R code into a web API:
+<ul>
+<li>The <a href="https://cran.r-project.org/package=jug">jug</a> package is a simple API-builder web framework, built around <a href="https://cran.r-project.org/package=httpuv">httpuv</a>.</li>
+<li>The <a href="https://cran.r-project.org/package=FastRWeb">FastRWeb</a> package provides some basic infrastructure for this. plumber allows you to create a REST API by decorating existing R source code.</li>
+</ul></li>
+</ul>
+</div>
 <div id="cran-packages" class="section level3">
 <h3>CRAN packages:</h3>
 <ul>
+<li><a href="https://cran.r-project.org/package=aurelius">aurelius</a></li>
+<li><a href="https://cran.r-project.org/package=AzureML">AzureML</a></li>
+<li><a href="https://cran.r-project.org/package=domino">domino</a></li>
+<li><a href="https://cran.r-project.org/package=FastRWeb">FastRWeb</a></li>
+<li><a href="https://cran.r-project.org/package=h2o">h2o</a></li>
+<li><a href="https://cran.r-project.org/package=httpuv">httpuv</a></li>
+<li><a href="https://cran.r-project.org/package=jug">jug</a></li>
+<li><a href="https://cran.r-project.org/package=keras">keras</a></li>
+<li><a href="https://cran.r-project.org/package=onnx">onnx</a></li>
+<li><a href="https://cran.r-project.org/package=opencpu">opencpu</a></li>
 <li><a href="https://cran.r-project.org/package=pmml">pmml</a></li>
 <li><a href="https://cran.r-project.org/package=pmmlTransformations">pmmlTransformations</a></li>
 <li><a href="https://cran.r-project.org/package=rattle">rattle</a></li>
+<li><a href="https://cran.r-project.org/package=RSclient">RSclient</a></li>
+<li><a href="https://cran.r-project.org/package=Rserve">Rserve</a></li>
+<li><a href="https://cran.r-project.org/package=tfestimators">tfestimators</a></li>
+<li><a href="https://cran.r-project.org/package=tidypredict">tidypredict</a></li>
+<li><a href="https://cran.r-project.org/package=yhatr">yhatr</a></li>
 </ul>
 </div>
 <div id="related-links" class="section level3">
