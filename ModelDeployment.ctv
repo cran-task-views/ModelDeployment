@@ -83,6 +83,7 @@ on-device machine learning inference with low latency and small binary size.
 The following packages can produce models in this format:
     </p>
     <ul>
+      <li>The <pkg>tensorflow</pkg> package provides full access to TensorFlow API for numerical computation using data flow graphs.</li>
       <li>The <pkg>tfestimators</pkg> package provides high-level API to machine learning models as well as highly customized neural network architectures.</li>
       <li>The <pkg>keras</pkg> package high-level API to construct different types of neural networks.</li>
     </ul>
@@ -111,6 +112,9 @@ provides functionalities to deploy models in those types of environments:
 REST API.</li>
       <li>The <a href="https://github.com/rstudio/cloudml">cloudml</a> package provides functionality to easily deploy models to
 <a href="https://cloud.google.com/ml-engine/">Google Cloud ML Engine</a>.
+      <li>
+        The <a href="https://github.com/rstudio/tfdeploy">cloudml</a> package provides functions to  run a local test server that supports the same REST API as CloudML and <a href="https://www.rstudio.com/products/connect/">RStudio Connect</a>.
+      </li>
       </li>
       <li>The <pkg>domino</pkg> package provides R interface to <a href="https://www.dominodatalab.com/">Domino</a> CLI, a service that makes it easy to run your code on scalable hardware, with integrated version control and collaboration features
 designed for analytical workflows.
@@ -155,6 +159,7 @@ deploy models in server based environments:
     <pkg>rattle</pkg>
     <pkg>RSclient</pkg>
     <pkg>Rserve</pkg>
+    <pkg>tensorflow</pkg>
     <pkg>tfestimators</pkg>
     <pkg>tidypredict</pkg>
     <pkg>yhatr</pkg>

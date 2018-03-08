@@ -71,6 +71,9 @@ that allow smaller and faster (fixed-point math) models. It enables
 on-device machine learning inference with low latency and small binary
 size. The following packages can produce models in this format:
 
+  - The [tensorflow](https://cran.r-project.org/package=tensorflow) package provides
+    full access to TensorFlow API for numerical computation using data
+    flow graphs.
   - The [tfestimators](https://cran.r-project.org/package=tfestimators) package
     provides high-level API to machine learning models as well as highly
     customized neural network architectures.
@@ -101,6 +104,10 @@ environments:
   - The [cloudml](https://github.com/rstudio/cloudml) package provides
     functionality to easily deploy models to [Google Cloud ML
     Engine](https://cloud.google.com/ml-engine/).
+  - The [cloudml](https://github.com/rstudio/tfdeploy) package provides
+    functions to run a local test server that supports the same REST API
+    as CloudML and [RStudio
+    Connect](https://www.rstudio.com/products/connect/).
   - The [domino](https://cran.r-project.org/package=domino) package provides R
     interface to [Domino](https://www.dominodatalab.com/) CLI, a service
     that makes it easy to run your code on scalable hardware, with
@@ -156,6 +163,7 @@ environments:
   - [rattle](https://cran.r-project.org/package=rattle)
   - [RSclient](https://cran.r-project.org/package=RSclient)
   - [Rserve](https://cran.r-project.org/package=Rserve)
+  - [tensorflow](https://cran.r-project.org/package=tensorflow)
   - [tfestimators](https://cran.r-project.org/package=tfestimators)
   - [tidypredict](https://cran.r-project.org/package=tidypredict)
   - [yhatr](https://cran.r-project.org/package=yhatr)
