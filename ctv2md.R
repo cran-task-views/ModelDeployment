@@ -2,6 +2,13 @@
 # Borrowed Dirk Eddelbuettel's code from: https://github.com/eddelbuettel/ctv-hpc/blob/master/ctv2md.r
 # Thanks Dirk!
 
+# Sync with R-Forge ctv repo - https://r-forge.r-project.org/projects/ctv/
+# SVN repo - https://r-forge.r-project.org/scm/viewvc.php/?root=ctv
+# 
+# cp ~/personalRepos/ctv-model-deployment/ModelDeployment.ctv ~/personalRepos/ctv/pkg/inst/ctv/
+# svn add ~/personalRepos/ctv/pkg/inst/ctv/
+# svn commit -m ...
+
 library(XML)
 library(ctv)
 
