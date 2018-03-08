@@ -8,99 +8,96 @@
   <info>
     <p>
       This CRAN task view contains a list of packages, grouped by topic, that
-      provides functionalities to streamline the process of deploying models to 
-      scoring or inferencing on new data on various environments, such as 
+      provides functionalities to streamline the process of deploying models to
+      scoring or inferencing on new data on various environments, such as
       mobile devices, edge devices, cloud, GPUs, etc.
     </p>
-    
+
     <p>
       Deploying models is often challenging due to the following reasons:
     </p>
-    
+
     <ul>
       <li>
-        It involves deploying models on heterogenous environments, e.g. edge devices, 
+        It involves deploying models on heterogenous environments, e.g. edge devices,
         mobile devices, GPUs, etc.
       </li>
       <li>
-        It is hard to compress the model to very small size that could fit on devices 
+        It is hard to compress the model to very small size that could fit on devices
         with limited storage while avoiding high overhead to decompress it before model inference.
       </li>
       <li>
         It is hard to make sure the trained model can process new data records within limited memory.
       </li>
       <li>
-        Not all environments have good network connectivity so sometimes cloud solutions may not 
+        Not all environments have good network connectivity so sometimes cloud solutions may not
         satisfy the requirements.
       </li>
 
     </ul>
 
     <p>
-      Many of the areas discussed in this Task View are undergoing rapid
+      Many of the areas discussed in this task view are undergoing rapid
       change in industries and academia. Please send suggestions for additions and extensions for this task
       view to the <a href="mailto:terrytangyuan@gmail.com">task view maintainer</a>.
     </p>
 
     <p><strong>Mobile/Edge Devices</strong></p>
-    
+
     <p>
     This section includes packages that provides functionalities to export the trained
 model to an artifact that could fit in small devices such as mobile devices
 (e.g. Android, iOS) and edge devices (Rasberri Pi). These packages are built
 based on different model format.
     </p>
-
-    <p>
-Predictive Model Markup Language (PMML) is an XML-based language which
+    <ul>
+      <li>
+        Predictive Model Markup Language (PMML) is an XML-based language which
 provides a way for applications to define statistical and data mining models
 and to share models between PMML compliant applications. The following packages
 are based on PMML:
-    </p>
-    <ul>
-      <li>The <pkg>pmml</pkg> package provides the main interface to PMML.</li>
-      <li>The <pkg>pmmlTransformations</pkg> package allows for data to be transformed before using it to
-construct models. Builds structures to allow functions in the PMML package to
-output transformation details in addition to the model in the resulting PMML file.
+          <ul>
+            <li>The <pkg>pmml</pkg> package provides the main interface to PMML.</li>
+            <li>The <pkg>pmmlTransformations</pkg> package allows for data to be transformed before using it to
+      construct models. Builds structures to allow functions in the PMML package to
+      output transformation details in addition to the model in the resulting PMML file.
+            </li>
+            <li>The <pkg>rattle</pkg> package allows to load data from a CSV file (or via ODBC), transform and explore the data, build and evaluate models, and export models as PMML or as scores.
+            </li>
+          </ul>
       </li>
-      <li>The <pkg>rattle</pkg> package allows to load data from a CSV file (or via ODBC), transform and explore the data, build and evaluate models, and export models as PMML or as scores.
-      </li>
-    </ul>
-    
-    <p>
-Plain Old Java Object (POJO) or a Model ObJect, Optimized (MOJO) are intended to
+      <li>
+        Plain Old Java Object (POJO) or a Model ObJect, Optimized (MOJO) are intended to
 be easily embeddable in any Java environment. The only compilation and runtime
 dependency for a generated model is a .jar file produced as the
 build output of these packages. The <pkg>h2o</pkg> package provides easy-to-use interface to
 build machine learning models that can then be exported as MOJO and POJO format.
-    </p>
-    
-    <p><a href="https://www.tensorflow.org/">TensorFlow</a> ExportedModel as well as its optimized version <a href="https://www.tensorflow.org/mobile/tflite/">TensorFlow Lite</a> aimed for small devices called, which uses many techniques for achieving low latency such as
-optimizing the kernels for mobile apps, pre-fused activations, and quantized
-kernels that allow smaller and faster (fixed-point math) models. It enables
-on-device machine learning inference with low latency and small binary size.
-The following packages can produce models in this format:
-    </p>
-    <ul>
-      <li>The <pkg>tensorflow</pkg> package provides full access to TensorFlow API for numerical computation using data flow graphs.</li>
-      <li>The <pkg>tfestimators</pkg> package provides high-level API to machine learning models as well as highly customized neural network architectures.</li>
-      <li>The <pkg>keras</pkg> package high-level API to construct different types of neural networks.</li>
-    </ul>
-    
-    <p>
-Portable Format for Analytics (PFA) is a specification for event-based
+      </li>
+      <li>
+        Portable Format for Analytics (PFA) is a specification for event-based
 processors that perform predictive or analytic calculations and is aimed at
 helping smooth the transition from statistical model development to large-scale
 and/or online production. The <pkg>aurelius</pkg> package provides tools for converting R
 objects and syntax into the PFA format.
-    </p>
-    
-    <p>
-Additionally, the <pkg>onnx</pkg> package provides the interface to <a href="https://onnx.ai/">Open Neural Network Exchange (ONNX)</a> which is a standard format for models built using different frameworks (e.g. TensorFlow, MXNet, PyTorch, etc).
-    </p>
-    
+      </li>
+      <li>
+        <a href="https://www.tensorflow.org/">TensorFlow</a> ExportedModel as well as its optimized version <a href="https://www.tensorflow.org/mobile/tflite/">TensorFlow Lite</a>, which uses many techniques for achieving low latency such as optimizing the kernels for mobile apps, pre-fused activations, and quantized
+kernels that allow smaller and faster (fixed-point math) models. It enables
+on-device machine learning inference with low latency and small binary size.
+The following packages can produce models in this format:
+        <ul>
+          <li>The <pkg>tensorflow</pkg> package provides full access to TensorFlow API for numerical computation using data flow graphs.</li>
+          <li>The <pkg>tfestimators</pkg> package provides high-level API to machine learning models as well as highly customized neural network architectures.</li>
+          <li>The <pkg>keras</pkg> package high-level API to construct different types of neural networks.</li>
+        </ul>
+      </li>
+      <li>
+        The <pkg>onnx</pkg> package provides the interface to <a href="https://onnx.ai/">Open Neural Network Exchange (ONNX)</a> which is a standard format for models built using different frameworks (e.g. TensorFlow, MXNet, PyTorch, etc).
+      </li>
+    </ul>
+
     <p><strong>Cloud/server-based Environments</strong></p>
-    
+
     <p>
     Many deployment environments are based on cloud/server. The following packages
 provides functionalities to deploy models in those types of environments:
@@ -119,7 +116,7 @@ REST API.</li>
 designed for analytical workflows.
       </li>
       <li>The <pkg>tidypredict</pkg> package provides functionalities to run predictions inside database. However, it's still in early stage since currently only a small number of algorithms are supported. </li>
-      <li>The <pkg>AzureML</pkg> package contains functions and datasets to support <a href="https://azure.microsoft.com/en-us/overview/machine-learning/">Azure Machine Learning<a/>. This allows you to interact with datasets, as well as publish and consume R functions as API services.</li>
+      <li>The <pkg>AzureML</pkg> package contains functions and datasets to support <a href="https://azure.microsoft.com/en-us/overview/machine-learning/">Azure Machine Learning</a>. This allows you to interact with datasets, as well as publish and consume R functions as API services.</li>
       <li><a href="http://projects.revolutionanalytics.com/deployr/">DeployR Open</a> is a server-based
 framework for integrating R into other applications via Web Services.</li>
       <li>The <pkg>opencpu</pkg> package provides a server that exposes a simple but powerful HTTP API for RPC and data interchange with R. This provides a reliable and scalable foundation for statistical services or building R web applications.</li>
@@ -137,7 +134,7 @@ deploy models in server based environments:
           <li>The <pkg>FastRWeb</pkg> package provides some basic infrastructure for this. plumber allows you to create a REST API by decorating existing R source code.</li>
         </ul>
       </li>
-      
+
     </ul>
 
   </info>
@@ -162,7 +159,7 @@ deploy models in server based environments:
     <pkg>tfestimators</pkg>
     <pkg>tidypredict</pkg>
     <pkg>yhatr</pkg>
-    
+
   </packagelist>
 
   <links>
