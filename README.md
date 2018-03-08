@@ -31,7 +31,10 @@ This section includes packages that provides functionalities to export the train
     -   The [pmml](https://cran.r-project.org/package=pmml) package provides the main interface to PMML.
     -   The [pmmlTransformations](https://cran.r-project.org/package=pmmlTransformations) package allows for data to be transformed before using it to construct models. Builds structures to allow functions in the PMML package to output transformation details in addition to the model in the resulting PMML file.
     -   The [rattle](https://cran.r-project.org/package=rattle) package allows to load data from a CSV file (or via ODBC), transform and explore the data, build and evaluate models, and export models as PMML or as scores.
--   Plain Old Java Object (POJO) or a Model Object, Optimized (MOJO) are intended to be easily embeddable in any Java environment. The only compilation and runtime dependency for a generated model is a h2o-genmodel.jar file produced as the build output of these packages. The [h2o](https://cran.r-project.org/package=h2o/index.html) package provides easy-to-use interface to build a wide range of machine learning models, such as GLM, DRF, and XGBoost models based on [xgboost](../packages/xgboost) package, which can then be exported as MOJO and POJO format. The MOJO and POJO artifacts can then be loaded by its different language bindings, e.g. Java, Scala, R, and Python.
+    -   The [arules](https://cran.r-project.org/package=arules) package provides the infrastructure for representing, manipulating and analyzing transaction data and patterns (frequent itemsets and association rules). The associations can be written to disk in PMML.
+    -   The [arulesSequences](https://cran.r-project.org/package=arulesSequences) package is an add-on for arules to handle and mine frequent sequences.
+    -   The [arulesCBA](https://cran.r-project.org/package=arulesCBA) package provides a function to build an association rule-based classifier for data frames, and to classify incoming data frames using such a classifier.
+-   Plain Old Java Object (POJO) or a Model Object, Optimized (MOJO) are intended to be easily embeddable in any Java environment. The only compilation and runtime dependency for a generated model is a h2o-genmodel.jar file produced as the build output of these packages. The [h2o](https://cran.r-project.org/package=h2o/index.html) package provides easy-to-use interface to build a wide range of machine learning models, such as GLM, DRF, and XGBoost models based on [xgboost](../packages/xgboost) package, which can then be exported as MOJO and POJO format. The MOJO and POJO artifacts can then be loaded by its REST interface as well as different language bindings, e.g. Java, Scala, R, and Python.
 -   Portable Format for Analytics (PFA) is a specification for event-based processors that perform predictive or analytic calculations and is aimed at helping smooth the transition from statistical model development to large-scale and/or online production. PFA combines the ease of portability across systems with algorithmic flexibility: models, pre-processing, and post-processing are all functions that can be arbitrarily composed, chained, or built into complex workflows. The [aurelius](https://cran.r-project.org/package=aurelius) package provides tools for converting R objects and syntax into the PFA format.
 -   [TensorFlow](https://www.tensorflow.org/) 's ExportedModel as well as its optimized version [TensorFlow Lite](https://www.tensorflow.org/mobile/tflite/), which uses many techniques for achieving low latency such as optimizing the kernels for mobile apps, pre-fused activations, and quantized kernels that allow smaller and faster (fixed-point math) models. It enables on-device machine learning inference with low latency and small binary size. The following packages can produce models in this format:
     -   The [tensorflow](https://cran.r-project.org/package=tensorflow) package provides full access to TensorFlow API for numerical computation using data flow graphs.
@@ -48,6 +51,7 @@ Many deployment environments are based on cloud/server. The following packages p
 -   The [tfdeploy](https://github.com/rstudio/tfdeploy) package provides functions to run a local test server that supports the same REST API as CloudML and [RStudio Connect](https://www.rstudio.com/products/connect/).
 -   The [domino](https://cran.r-project.org/package=domino) package provides R interface to [Domino](https://www.dominodatalab.com/) CLI, a service that makes it easy to run your code on scalable hardware, with integrated version control and collaboration features designed for analytical workflows.
 -   The [tidypredict](https://cran.r-project.org/package=tidypredict/index.html) package provides functionalities to run predictions inside database. It's based on [dplyr](../packages/dplyr/index.html) and [dbplyr](../packages/dbplyr) that could translate data manipulations written in R to database queries that can be used later to execute the data transformations and aggregations inside various types of databases.
+-   The [ibmdbR](https://cran.r-project.org/package=ibmdbR) package allows many basic and complex R operations to be pushed down into the database, which removes the main memory boundary of R and allows to make full use of parallel processing in the underlying database.
 -   The [sparklyr](https://cran.r-project.org/package=sparklyr/index.html) package provides bindings to [Apache Spark](https://spark.apache.org/) 's distributed machine learning library and allows to deploy the trained models to clusters. Additionally, the [rsparkling](../packages/rsparkling/index.html) package uses [sparklyr](../packages/sparklyr/index.html) for Spark job deployment while using [h2o](../packages/h2o) package for regular model building.
 -   The [AzureML](https://cran.r-project.org/package=AzureML) package contains functions and datasets to support [Azure Machine Learning](https://azure.microsoft.com/en-us/overview/machine-learning/). This allows you to interact with datasets, as well as publish and consume R functions as API services.
 -   [DeployR Open](http://projects.revolutionanalytics.com/deployr/) is a server-based framework for integrating R into other applications via Web Services.
@@ -61,6 +65,9 @@ Many deployment environments are based on cloud/server. The following packages p
 
 ### CRAN packages:
 
+-   [arules](https://cran.r-project.org/package=arules)
+-   [arulesCBA](https://cran.r-project.org/package=arulesCBA)
+-   [arulesSequences](https://cran.r-project.org/package=arulesSequences)
 -   [aurelius](https://cran.r-project.org/package=aurelius)
 -   [AzureML](https://cran.r-project.org/package=AzureML)
 -   [dbplyr](https://cran.r-project.org/package=dbplyr)
@@ -69,6 +76,7 @@ Many deployment environments are based on cloud/server. The following packages p
 -   [FastRWeb](https://cran.r-project.org/package=FastRWeb)
 -   [h2o](https://cran.r-project.org/package=h2o)
 -   [httpuv](https://cran.r-project.org/package=httpuv)
+-   [ibmdbR](https://cran.r-project.org/package=ibmdbR)
 -   [jug](https://cran.r-project.org/package=jug)
 -   [keras](https://cran.r-project.org/package=keras)
 -   [onnx](https://cran.r-project.org/package=onnx)

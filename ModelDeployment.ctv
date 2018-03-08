@@ -77,6 +77,9 @@ are based on PMML:
             </li>
             <li>The <pkg>rattle</pkg> package allows to load data from a CSV file (or via ODBC), transform and explore the data, build and evaluate models, and export models as PMML or as scores.
             </li>
+            <li>The <pkg>arules</pkg> package provides the infrastructure for representing, manipulating and analyzing transaction data and patterns (frequent itemsets and association rules). The associations can be written to disk in PMML.</li>
+            <li>The <pkg>arulesSequences</pkg> package is an add-on for arules to handle and mine frequent sequences.</li>
+            <li>The <pkg>arulesCBA</pkg> package provides a function to build an association rule-based classifier for data frames, and to classify incoming data frames using such a classifier. </li>
           </ul>
       </li>
       <li>
@@ -84,7 +87,7 @@ are based on PMML:
 be easily embeddable in any Java environment. The only compilation and runtime
 dependency for a generated model is a h2o-genmodel.jar file produced as the
 build output of these packages. The <pkg>h2o</pkg> package provides easy-to-use interface to
-build a wide range of machine learning models, such as GLM, DRF, and XGBoost models based on <pkg>xgboost</pkg> package, which can then be exported as MOJO and POJO format. The MOJO and POJO artifacts can then be loaded by its different language bindings, e.g. Java, Scala, R, and Python. 
+build a wide range of machine learning models, such as GLM, DRF, and XGBoost models based on <pkg>xgboost</pkg> package, which can then be exported as MOJO and POJO format. The MOJO and POJO artifacts can then be loaded by its REST interface as well as different language bindings, e.g. Java, Scala, R, and Python. 
       </li>
       <li>
         Portable Format for Analytics (PFA) is a specification for event-based
@@ -131,6 +134,9 @@ designed for analytical workflows.
       <li>The <pkg>tidypredict</pkg> package provides functionalities to run predictions inside database. It's based on <pkg>dplyr</pkg> and <pkg>dbplyr</pkg> that could translate data manipulations written in R to database queries that can be used later to execute the data transformations and aggregations inside various types of databases.
       </li>
       <li>
+        The <pkg>ibmdbR</pkg> package allows many basic and complex R operations to be pushed down into the database, which removes the main memory boundary of R and allows to make full use of parallel processing in the underlying database.
+      </li>
+      <li>
         The <pkg>sparklyr</pkg> package provides bindings to <a href="https://spark.apache.org/">Apache Spark</a>'s distributed machine learning library and allows to deploy the trained models to clusters. Additionally, the <pkg>rsparkling</pkg> package uses <pkg>sparklyr</pkg> for Spark job deployment while using <pkg>h2o</pkg> package for regular model building.
       </li>
       <li>The <pkg>AzureML</pkg> package contains functions and datasets to support <a href="https://azure.microsoft.com/en-us/overview/machine-learning/">Azure Machine Learning</a>. This allows you to interact with datasets, as well as publish and consume R functions as API services.</li>
@@ -158,6 +164,9 @@ deploy models in server based environments:
 
   <packagelist>
     <pkg>aurelius</pkg>
+    <pkg>arules</pkg>
+    <pkg>arulesCBA</pkg>
+    <pkg>arulesSequences</pkg>
     <pkg>AzureML</pkg>
     <pkg>dbplyr</pkg>
     <pkg>domino</pkg>
@@ -165,6 +174,7 @@ deploy models in server based environments:
     <pkg>FastRWeb</pkg>
     <pkg>h2o</pkg>
     <pkg>httpuv</pkg>
+    <pkg>ibmdbR</pkg>
     <pkg>jug</pkg>
     <pkg>keras</pkg>
     <pkg>onnx</pkg>
