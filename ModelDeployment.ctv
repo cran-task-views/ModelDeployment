@@ -112,14 +112,14 @@ REST API.</li>
       <li>The <a href="https://github.com/rstudio/cloudml">cloudml</a> package provides functionality to easily deploy models to
 <a href="https://cloud.google.com/ml-engine/">Google Cloud ML Engine</a>.
       <li>
-        The <a href="https://github.com/rstudio/tfdeploy">tfdeploy</a> package provides functions to  run a local test server that supports the same REST API as CloudML and <a href="https://www.rstudio.com/products/connect/">RStudio Connect</a>.
+        The <a href="https://github.com/rstudio/tfdeploy">tfdeploy</a> package provides functions to run a local test server that supports the same REST API as CloudML and <a href="https://www.rstudio.com/products/connect/">RStudio Connect</a>.
       </li>
       </li>
       <li>The <pkg>domino</pkg> package provides R interface to <a href="https://www.dominodatalab.com/">Domino</a> CLI, a service that makes it easy to run your code on scalable hardware, with integrated version control and collaboration features
 designed for analytical workflows.
       </li>
-      <li>The <pkg>tidypredict</pkg> package provides functionalities to run predictions inside database.</li>
-      <li>The <pkg>AzureML</pkg> package contains functions and datasets to support Azure Machine Learning. This allows you to interact with datasets, as well as publish and consume R functions as API services.</li>
+      <li>The <pkg>tidypredict</pkg> package provides functionalities to run predictions inside database. However, it's still in early stage since currently only a small number of algorithms are supported. </li>
+      <li>The <pkg>AzureML</pkg> package contains functions and datasets to support <a href="https://azure.microsoft.com/en-us/overview/machine-learning/">Azure Machine Learning<a/>. This allows you to interact with datasets, as well as publish and consume R functions as API services.</li>
       <li><a href="http://projects.revolutionanalytics.com/deployr/">DeployR Open</a> is a server-based
 framework for integrating R into other applications via Web Services.</li>
       <li>The <pkg>opencpu</pkg> package provides a server that exposes a simple but powerful HTTP API for RPC and data interchange with R. This provides a reliable and scalable foundation for statistical services or building R web applications.</li>
