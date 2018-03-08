@@ -72,7 +72,7 @@ are based on PMML:
           </ul>
       </li>
       <li>
-        Plain Old Java Object (POJO) or a Model ObJect, Optimized (MOJO) are intended to
+        Plain Old Java Object (POJO) or a Model Object, Optimized (MOJO) are intended to
 be easily embeddable in any Java environment. The only compilation and runtime
 dependency for a generated model is a .jar file produced as the
 build output of these packages. The <pkg>h2o</pkg> package provides easy-to-use interface to
@@ -82,11 +82,11 @@ build machine learning models that can then be exported as MOJO and POJO format.
         Portable Format for Analytics (PFA) is a specification for event-based
 processors that perform predictive or analytic calculations and is aimed at
 helping smooth the transition from statistical model development to large-scale
-and/or online production. The <pkg>aurelius</pkg> package provides tools for converting R
-objects and syntax into the PFA format.
+and/or online production. PFA combines the ease of portability across systems with algorithmic flexibility: models, pre-processing, and post-processing are all functions that can be arbitrarily composed, chained, or built into complex workflows. The <pkg>aurelius</pkg> package provides tools for converting R
+objects and syntax into the PFA format. 
       </li>
       <li>
-        <a href="https://www.tensorflow.org/">TensorFlow</a> ExportedModel as well as its optimized version <a href="https://www.tensorflow.org/mobile/tflite/">TensorFlow Lite</a>, which uses many techniques for achieving low latency such as optimizing the kernels for mobile apps, pre-fused activations, and quantized
+        <a href="https://www.tensorflow.org/">TensorFlow</a>'s ExportedModel as well as its optimized version <a href="https://www.tensorflow.org/mobile/tflite/">TensorFlow Lite</a>, which uses many techniques for achieving low latency such as optimizing the kernels for mobile apps, pre-fused activations, and quantized
 kernels that allow smaller and faster (fixed-point math) models. It enables
 on-device machine learning inference with low latency and small binary size.
 The following packages can produce models in this format:
@@ -97,7 +97,7 @@ The following packages can produce models in this format:
         </ul>
       </li>
       <li>
-        The <pkg>onnx</pkg> package provides the interface to <a href="https://onnx.ai/">Open Neural Network Exchange (ONNX)</a> which is a standard format for models built using different frameworks (e.g. TensorFlow, MXNet, PyTorch, etc).
+        The <pkg>onnx</pkg> package provides the interface to <a href="https://onnx.ai/">Open Neural Network Exchange (ONNX)</a> which is a standard format for models built using different frameworks (e.g. TensorFlow, MXNet, PyTorch, CNTK, etc). It defines an extensible computation graph model, as well as definitions of built-in operators and standard data types. Models trained in one framework can be easily transferred to another framework for inference. This open source format enables the interoperability between different frameworks and streamlining the path from research to production will increase the speed of innovation in the AI community. 
       </li>
     </ul>
 
