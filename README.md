@@ -57,11 +57,13 @@ Many deployment environments are based on cloud/server. The following packages p
 -   [DeployR Open](http://projects.revolutionanalytics.com/deployr/) is a server-based framework for integrating R into other applications via Web Services.
 -   The [opencpu](https://cran.r-project.org/package=opencpu) package provides a server that exposes a simple but powerful HTTP API for RPC and data interchange with R. This provides a reliable and scalable foundation for statistical services or building R web applications.
 -   Several general purpose server/client frameworks for R exist that could help deploy models in server based environments:
-    -   The [Rserve](https://cran.r-project.org/package=Rserve/index.html) and [RSclient](../packages/RSclient) packages both provide server and client functionality for TCP/IP or local socket interfaces.
+    -   The [Rserve](https://cran.r-project.org/package=Rserve/index.html) and [RSclient](../packages/RSclient) packages both provide server and client functionality for TCP/IP or local socket interfaces to enable access to R from many languages and systems.
     -   The [httpuv](https://cran.r-project.org/package=httpuv) package provides a low-level socket and protocol support for handling HTTP and WebSocket requests directly within R.
 -   Several packages offer functionality for turning R code into a web API:
     -   The [jug](https://cran.r-project.org/package=jug/index.html) package is a simple API-builder web framework, built around [httpuv](../packages/httpuv).
     -   The [FastRWeb](https://cran.r-project.org/package=FastRWeb) package provides some basic infrastructure for this. plumber allows you to create a REST API by decorating existing R source code.
+    -   The [plumber](https://cran.r-project.org/package=plumber) package allows you to create a web API by merely decorating your existing R source code with special comments.
+    -   The [RestRserve](https://github.com/dselivanov/RestRserve) package is a R web API framework for building high-performance microservices and app backends based on [Rserve](https://cran.r-project.org/package=Rserve).
 
 ### CRAN packages:
 
@@ -81,6 +83,7 @@ Many deployment environments are based on cloud/server. The following packages p
 -   [keras](https://cran.r-project.org/package=keras)
 -   [onnx](https://cran.r-project.org/package=onnx)
 -   [opencpu](https://cran.r-project.org/package=opencpu)
+-   [plumber](https://cran.r-project.org/package=plumber)
 -   [pmml](https://cran.r-project.org/package=pmml)
 -   [pmmlTransformations](https://cran.r-project.org/package=pmmlTransformations)
 -   [rattle](https://cran.r-project.org/package=rattle)
@@ -96,4 +99,6 @@ Many deployment environments are based on cloud/server. The following packages p
 
 ### Related links:
 
+-   CRAN Task View: [HighPerformanceComputing](HighPerformanceComputing.html)
+-   CRAN Task View: [MachineLearning](MachineLearning.html)
 -   [GitHub repository for this Task View](https://github.com/terrytangyuan/ctv-model-deployment)
