@@ -1,20 +1,20 @@
 <CRANTaskView>
 
    <name>ModelDeployment</name>
-   <topic>Model Deployment in R</topic>
+   <topic>Model Deployment with R</topic>
    <maintainer email="terrytangyuan@gmail.com">Yuan Tang</maintainer>
-   <version>2018-03-07</version>
+   <version>2018-03-08</version>
 
   <info>
     <p>
       This CRAN task view contains a list of packages, grouped by topic, that
-      provides functionalities to streamline the process of deploying models to
-      scoring or inferencing on new data on various environments, such as
-      mobile devices, edge devices, cloud, GPUs, etc.
+      provides functionalities to streamline the process of deploying models to various
+      environments, such as mobile devices, edge devices, cloud, and GPUs, for
+      scoring or inferencing on new data.
     </p>
 
     <p>
-      Deploying models is often challenging due to the following reasons:
+      Model deployment is often challenging due to various reasons. Some example challenges are:
     </p>
 
     <ul>
@@ -23,26 +23,31 @@
         mobile devices, GPUs, etc.
       </li>
       <li>
-        It is hard to compress the model to very small size that could fit on devices
-        with limited storage while avoiding high overhead to decompress it before model inference.
+        It is hard to compress the model to very small size that could fit on devices with limited storage while keeping the same precision and small overhead to load the model before inference.
       </li>
       <li>
-        It is hard to make sure the trained model can process new data records within limited memory.
+        Deployed models sometimes need to process new data records within limited memory on small devices.
       </li>
       <li>
-        Not all environments have good network connectivity so sometimes cloud solutions may not
-        satisfy the requirements.
+        Many deployment environments have bad network connectivity so sometimes cloud solutions may not
+        meet the requirements.
+      </li>
+      <li>
+        There's interest in stronger user data privacy paradigms where user data does not need to leave the mobile device.
+      </li>
+      <li>
+        There's growing demand to perform on-device model-based data filtering before collecting the data.
       </li>
 
     </ul>
 
     <p>
       Many of the areas discussed in this task view are undergoing rapid
-      change in industries and academia. Please send suggestions for additions and extensions for this task
+      changes in industries and academia. Please send suggestions for this task
       view to the <a href="mailto:terrytangyuan@gmail.com">task view maintainer</a>.
     </p>
 
-    <p><strong>Mobile/Edge Devices</strong></p>
+    <p><strong>Deployment through Different Types of Artifacts</strong></p>
 
     <p>
     This section includes packages that provides functionalities to export the trained
@@ -96,7 +101,7 @@ The following packages can produce models in this format:
       </li>
     </ul>
 
-    <p><strong>Cloud/server-based Environments</strong></p>
+    <p><strong>Deployment through Cloud/Server</strong></p>
 
     <p>
     Many deployment environments are based on cloud/server. The following packages
@@ -115,7 +120,11 @@ REST API.</li>
       <li>The <pkg>domino</pkg> package provides R interface to <a href="https://www.dominodatalab.com/">Domino</a> CLI, a service that makes it easy to run your code on scalable hardware, with integrated version control and collaboration features
 designed for analytical workflows.
       </li>
-      <li>The <pkg>tidypredict</pkg> package provides functionalities to run predictions inside database. However, it's still in early stage since currently only a small number of algorithms are supported. </li>
+      <li>The <pkg>tidypredict</pkg> package provides functionalities to run predictions inside database. It's based on <pkg>dplyr</pkg> and <pkg>dbplyr</pkg> that could translate data manipulations written in R to database queries that can be used later to execute the data transformations and aggregations inside various types of databases.
+      </li>
+      <li>
+        The <pkg>sparklyr</pkg> package provides bindings to <a href="https://spark.apache.org/">Apache Spark</a>'s distributed machine learning library and allows to deploy the trained models to clusters. Additionally, the <pkg>rsparkling</pkg> package uses <pkg>sparklyr</pkg> for Spark job deployment while using <pkg>h2o</pkg> package for regular model building.
+      </li>
       <li>The <pkg>AzureML</pkg> package contains functions and datasets to support <a href="https://azure.microsoft.com/en-us/overview/machine-learning/">Azure Machine Learning</a>. This allows you to interact with datasets, as well as publish and consume R functions as API services.</li>
       <li><a href="http://projects.revolutionanalytics.com/deployr/">DeployR Open</a> is a server-based
 framework for integrating R into other applications via Web Services.</li>
@@ -142,7 +151,9 @@ deploy models in server based environments:
   <packagelist>
     <pkg>aurelius</pkg>
     <pkg>AzureML</pkg>
+    <pkg>dbplyr</pkg>
     <pkg>domino</pkg>
+    <pkg>dplyr</pkg>
     <pkg>FastRWeb</pkg>
     <pkg>h2o</pkg>
     <pkg>httpuv</pkg>
@@ -153,8 +164,10 @@ deploy models in server based environments:
     <pkg>pmml</pkg>
     <pkg>pmmlTransformations</pkg>
     <pkg>rattle</pkg>
+    <pkg>rsparkling</pkg>
     <pkg>RSclient</pkg>
     <pkg>Rserve</pkg>
+    <pkg>sparklyr</pkg>
     <pkg>tensorflow</pkg>
     <pkg>tfestimators</pkg>
     <pkg>tidypredict</pkg>

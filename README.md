@@ -1,25 +1,27 @@
-CRAN Task View: Model Deployment in R
--------------------------------------
+CRAN Task View: Model Deployment with R
+---------------------------------------
 
 |                 |                                                     
 |-----------------|---------------------------------------------------  
 | **Maintainer:** | Yuan Tang                                           
 | **Contact:**    | terrytangyuan at gmail.com                          
-| **Version:**    | 2018-03-07                                          
+| **Version:**    | 2018-03-08                                          
 | **URL:**        | <https://CRAN.R-project.org/view=ModelDeployment>   
 
-This CRAN task view contains a list of packages, grouped by topic, that provides functionalities to streamline the process of deploying models to scoring or inferencing on new data on various environments, such as mobile devices, edge devices, cloud, GPUs, etc.
+This CRAN task view contains a list of packages, grouped by topic, that provides functionalities to streamline the process of deploying models to various environments, such as mobile devices, edge devices, cloud, and GPUs, for scoring or inferencing on new data.
 
-Deploying models is often challenging due to the following reasons:
+Model deployment is often challenging due to various reasons. Some example challenges are:
 
 -   It involves deploying models on heterogenous environments, e.g. edge devices, mobile devices, GPUs, etc.
--   It is hard to compress the model to very small size that could fit on devices with limited storage while avoiding high overhead to decompress it before model inference.
--   It is hard to make sure the trained model can process new data records within limited memory.
--   Not all environments have good network connectivity so sometimes cloud solutions may not satisfy the requirements.
+-   It is hard to compress the model to very small size that could fit on devices with limited storage while keeping the same precision and small overhead to load the model before inference.
+-   Deployed models sometimes need to process new data records within limited memory on small devices.
+-   Many deployment environments have bad network connectivity so sometimes cloud solutions may not meet the requirements.
+-   There's interest in stronger user data privacy paradigms where user data does not need to leave the mobile device.
+-   There's growing demand to perform on-device model-based data filtering before collecting the data.
 
-Many of the areas discussed in this task view are undergoing rapid change in industries and academia. Please send suggestions for additions and extensions for this task view to the [task view maintainer](mailto:terrytangyuan@gmail.com).
+Many of the areas discussed in this task view are undergoing rapid changes in industries and academia. Please send suggestions for this task view to the [task view maintainer](mailto:terrytangyuan@gmail.com).
 
-**Mobile/Edge Devices**
+**Deployment through Different Types of Artifacts**
 
 This section includes packages that provides functionalities to export the trained model to an artifact that could fit in small devices such as mobile devices (e.g. Android, iOS) and edge devices (Rasberri Pi). These packages are built based on different model format.
 
@@ -35,7 +37,7 @@ This section includes packages that provides functionalities to export the train
     -   The [keras](https://cran.r-project.org/package=keras) package high-level API to construct different types of neural networks.
 -   The [onnx](https://cran.r-project.org/package=onnx) package provides the interface to [Open Neural Network Exchange (ONNX)](https://onnx.ai/) which is a standard format for models built using different frameworks (e.g. TensorFlow, MXNet, PyTorch, etc).
 
-**Cloud/server-based Environments**
+**Deployment through Cloud/Server**
 
 Many deployment environments are based on cloud/server. The following packages provides functionalities to deploy models in those types of environments:
 
@@ -43,7 +45,8 @@ Many deployment environments are based on cloud/server. The following packages p
 -   The [cloudml](https://github.com/rstudio/cloudml) package provides functionality to easily deploy models to [Google Cloud ML Engine](https://cloud.google.com/ml-engine/).
 -   The [tfdeploy](https://github.com/rstudio/tfdeploy) package provides functions to run a local test server that supports the same REST API as CloudML and [RStudio Connect](https://www.rstudio.com/products/connect/).
 -   The [domino](https://cran.r-project.org/package=domino) package provides R interface to [Domino](https://www.dominodatalab.com/) CLI, a service that makes it easy to run your code on scalable hardware, with integrated version control and collaboration features designed for analytical workflows.
--   The [tidypredict](https://cran.r-project.org/package=tidypredict) package provides functionalities to run predictions inside database. However, it's still in early stage since currently only a small number of algorithms are supported.
+-   The [tidypredict](https://cran.r-project.org/package=tidypredict/index.html) package provides functionalities to run predictions inside database. It's based on [dplyr](../packages/dplyr/index.html) and [dbplyr](../packages/dbplyr) that could translate data manipulations written in R to database queries that can be used later to execute the data transformations and aggregations inside various types of databases.
+-   The [sparklyr](https://cran.r-project.org/package=sparklyr/index.html) package provides bindings to [Apache Spark](https://spark.apache.org/) 's distributed machine learning library and allows to deploy the trained models to clusters. Additionally, the [rsparkling](../packages/rsparkling/index.html) package uses [sparklyr](../packages/sparklyr/index.html) for Spark job deployment while using [h2o](../packages/h2o) package for regular model building.
 -   The [AzureML](https://cran.r-project.org/package=AzureML) package contains functions and datasets to support [Azure Machine Learning](https://azure.microsoft.com/en-us/overview/machine-learning/). This allows you to interact with datasets, as well as publish and consume R functions as API services.
 -   [DeployR Open](http://projects.revolutionanalytics.com/deployr/) is a server-based framework for integrating R into other applications via Web Services.
 -   The [opencpu](https://cran.r-project.org/package=opencpu) package provides a server that exposes a simple but powerful HTTP API for RPC and data interchange with R. This provides a reliable and scalable foundation for statistical services or building R web applications.
@@ -58,7 +61,9 @@ Many deployment environments are based on cloud/server. The following packages p
 
 -   [aurelius](https://cran.r-project.org/package=aurelius)
 -   [AzureML](https://cran.r-project.org/package=AzureML)
+-   [dbplyr](https://cran.r-project.org/package=dbplyr)
 -   [domino](https://cran.r-project.org/package=domino)
+-   [dplyr](https://cran.r-project.org/package=dplyr)
 -   [FastRWeb](https://cran.r-project.org/package=FastRWeb)
 -   [h2o](https://cran.r-project.org/package=h2o)
 -   [httpuv](https://cran.r-project.org/package=httpuv)
@@ -71,6 +76,8 @@ Many deployment environments are based on cloud/server. The following packages p
 -   [rattle](https://cran.r-project.org/package=rattle)
 -   [RSclient](https://cran.r-project.org/package=RSclient)
 -   [Rserve](https://cran.r-project.org/package=Rserve)
+-   [rsparkling](https://cran.r-project.org/package=rsparkling)
+-   [sparklyr](https://cran.r-project.org/package=sparklyr)
 -   [tensorflow](https://cran.r-project.org/package=tensorflow)
 -   [tfestimators](https://cran.r-project.org/package=tfestimators)
 -   [tidypredict](https://cran.r-project.org/package=tidypredict)
