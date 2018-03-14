@@ -2,12 +2,18 @@
 # Borrowed Dirk Eddelbuettel's code from: https://github.com/eddelbuettel/ctv-hpc/blob/master/ctv2md.r
 # Thanks Dirk!
 
-# Sync with R-Forge ctv repo - https://r-forge.r-project.org/projects/ctv/
-# SVN repo - https://r-forge.r-project.org/scm/viewvc.php/?root=ctv
+# # Sync with R-Forge ctv repo - https://r-forge.r-project.org/projects/ctv/
+# # SVN repo - https://r-forge.r-project.org/scm/viewvc.php/?root=ctv
 # 
 # cp ~/personalRepos/ctv-model-deployment/ModelDeployment.ctv ~/personalRepos/ctv/pkg/inst/ctv/
 # svn add ~/personalRepos/ctv/pkg/inst/ctv/
 # svn commit -m ...
+#
+# # Pull from SVN
+# 
+# svn up
+# cp ~/personalRepos/ctv/pkg/inst/ctv/ModelDeployment.ctv ~/personalRepos/ctv-model-deployment/
+
 
 library(XML)
 library(ctv)
@@ -30,7 +36,7 @@ cmd <- paste0("cat ", htmlfile,
               ###  - capture the 'Word' and insert it into a larger URL containing an absolute reference to task view 'Word'
               " | sed -e 's|^<a href=\"\\([a-zA-Z]*\\)\\.html|<a href=\"https://cran.r-project.org/web/views/\\1.html\"|' | ",
               ###  - call pandoc, specifying html as input and github-flavoured markdown as output
-              "pandoc -s -r html -w markdown_github | ",
+              "pandoc -s -r html -w gfm | ",
               ###  - deal with the header by removing extra ||, replacing |** with ** and **| with **:
               "sed -e's/||//g' -e's/|\\*\\*/\\*\\*/g' -e's/\\*\\*|/\\*\\* /g' -e's/|$/  /g' ",
               ###  - make the implicit URL to packages explicit
