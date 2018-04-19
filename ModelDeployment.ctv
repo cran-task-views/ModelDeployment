@@ -100,7 +100,7 @@ objects and syntax into the PFA format.
         <a href="https://www.tensorflow.org/">TensorFlow</a>'s ExportedModel as well as its optimized version <a href="https://www.tensorflow.org/mobile/tflite/">TensorFlow Lite</a>, which uses many techniques for achieving low latency such as optimizing the kernels for mobile apps, pre-fused activations, and quantized
 kernels that allow smaller and faster (fixed-point math) models. It enables
 on-device machine learning inference with low latency and small binary size.
-The following packages can produce models in this format:
+The packages listed below can produce models in this format. Note that these packages are R wrappers of their corresponding Python API based on the <pkg>reticulate</pkg> package. Though Python binary is required for creating the models, it's not required during inference time for deployment.
         <ul>
           <li>The <pkg>tensorflow</pkg> package provides full access to TensorFlow API for numerical computation using data flow graphs.</li>
           <li>The <pkg>tfestimators</pkg> package provides high-level API to machine learning models as well as highly customized neural network architectures.</li>
@@ -108,7 +108,7 @@ The following packages can produce models in this format:
         </ul>
       </li>
       <li>
-        The <pkg>onnx</pkg> package provides the interface to <a href="https://onnx.ai/">Open Neural Network Exchange (ONNX)</a> which is a standard format for models built using different frameworks (e.g. TensorFlow, MXNet, PyTorch, CNTK, etc). It defines an extensible computation graph model, as well as definitions of built-in operators and standard data types. Models trained in one framework can be easily transferred to another framework for inference. This open source format enables the interoperability between different frameworks and streamlining the path from research to production will increase the speed of innovation in the AI community. 
+        The <pkg>onnx</pkg> package provides the interface to <a href="https://onnx.ai/">Open Neural Network Exchange (ONNX)</a> which is a standard format for models built using different frameworks (e.g. TensorFlow, MXNet, PyTorch, CNTK, etc). It defines an extensible computation graph model, as well as definitions of built-in operators and standard data types. Models trained in one framework can be easily transferred to another framework for inference. This open source format enables the interoperability between different frameworks and streamlining the path from research to production will increase the speed of innovation in the AI community. Note that this package is based on the <pkg>reticulate</pkg> package to interface with the original Python API. Python binary is required for deployment.
       </li>
     </ul>
 
@@ -184,6 +184,7 @@ deploy models in server based environments:
     <pkg>pmml</pkg>
     <pkg>pmmlTransformations</pkg>
     <pkg>rattle</pkg>
+    <pkg>reticulate</pkg>
     <pkg>rsparkling</pkg>
     <pkg>RSclient</pkg>
     <pkg>Rserve</pkg>
