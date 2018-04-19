@@ -1,5 +1,4 @@
-README.html
-ModelDeployment.html
+*.html
 .Rproj.user
 .Rhistory
 .RData

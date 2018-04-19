@@ -1,24 +1,8 @@
 # Generate README.md from ModelDeployment.ctv
 # Borrowed Dirk Eddelbuettel's code from: https://github.com/eddelbuettel/ctv-hpc/blob/master/ctv2md.r
-# Thanks Dirk!
-
-# # Sync with R-Forge ctv repo - https://r-forge.r-project.org/projects/ctv/
-# # SVN repo - https://r-forge.r-project.org/scm/viewvc.php/?root=ctv
-# 
-# cp ~/personalRepos/ctv-model-deployment/ModelDeployment.ctv ~/personalRepos/ctv/pkg/inst/ctv/
-# svn add ~/personalRepos/ctv/pkg/inst/ctv/
-# svn commit -m ...
-#
-# # Pull from SVN
-# 
-# svn up
-# cp ~/personalRepos/ctv/pkg/inst/ctv/ModelDeployment.ctv ~/personalRepos/ctv-model-deployment/
-
 
 library(XML)
 library(ctv)
-
-setwd("~/personalRepos/ctv-model-deployment/")
 
 ctv <- "ModelDeployment"
 ctvfile  <- paste0(ctv, ".ctv")
