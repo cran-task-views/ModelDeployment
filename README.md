@@ -103,8 +103,12 @@ packages are built based on different model format.
     for mobile apps, pre-fused activations, and quantized kernels that
     allow smaller and faster (fixed-point math) models. It enables
     on-device machine learning inference with low latency and small
-    binary size. The following packages can produce models in this
-    format:
+    binary size. The packages listed below can produce models in this
+    format. Note that these packages are R wrappers of their
+    corresponding Python API based on the
+    [reticulate](https://cran.r-project.org/package=reticulate) package. Though
+    Python binary is required for creating the models, it's not required
+    during inference time for deployment.
       - The [tensorflow](https://cran.r-project.org/package=tensorflow) package
         provides full access to TensorFlow API for numerical computation
         using data flow graphs.
@@ -123,7 +127,10 @@ packages are built based on different model format.
     inference. This open source format enables the interoperability
     between different frameworks and streamlining the path from research
     to production will increase the speed of innovation in the AI
-    community.
+    community. Note that this package is based on the
+    [reticulate](https://cran.r-project.org/package=reticulate) package to interface
+    with the original Python API so Python binary is required for
+    deployment.
 
 **Deployment through Cloud/Server**
 
@@ -229,6 +236,7 @@ environments:
   - [pmml](https://cran.r-project.org/package=pmml)
   - [pmmlTransformations](https://cran.r-project.org/package=pmmlTransformations)
   - [rattle](https://cran.r-project.org/package=rattle)
+  - [reticulate](https://cran.r-project.org/package=reticulate)
   - [RSclient](https://cran.r-project.org/package=RSclient)
   - [Rserve](https://cran.r-project.org/package=Rserve)
   - [rsparkling](https://cran.r-project.org/package=rsparkling)

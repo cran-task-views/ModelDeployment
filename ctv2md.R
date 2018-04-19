@@ -18,6 +18,8 @@
 library(XML)
 library(ctv)
 
+setwd("~/personalRepos/ctv-model-deployment/")
+
 ctv <- "ModelDeployment"
 ctvfile  <- paste0(ctv, ".ctv")
 htmlfile <- paste0(ctv, ".html")

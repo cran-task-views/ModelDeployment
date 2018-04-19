@@ -108,7 +108,7 @@ The packages listed below can produce models in this format. Note that these pac
         </ul>
       </li>
       <li>
-        The <pkg>onnx</pkg> package provides the interface to <a href="https://onnx.ai/">Open Neural Network Exchange (ONNX)</a> which is a standard format for models built using different frameworks (e.g. TensorFlow, MXNet, PyTorch, CNTK, etc). It defines an extensible computation graph model, as well as definitions of built-in operators and standard data types. Models trained in one framework can be easily transferred to another framework for inference. This open source format enables the interoperability between different frameworks and streamlining the path from research to production will increase the speed of innovation in the AI community. Note that this package is based on the <pkg>reticulate</pkg> package to interface with the original Python API. Python binary is required for deployment.
+        The <pkg>onnx</pkg> package provides the interface to <a href="https://onnx.ai/">Open Neural Network Exchange (ONNX)</a> which is a standard format for models built using different frameworks (e.g. TensorFlow, MXNet, PyTorch, CNTK, etc). It defines an extensible computation graph model, as well as definitions of built-in operators and standard data types. Models trained in one framework can be easily transferred to another framework for inference. This open source format enables the interoperability between different frameworks and streamlining the path from research to production will increase the speed of innovation in the AI community. Note that this package is based on the <pkg>reticulate</pkg> package to interface with the original Python API so Python binary is required for deployment.
       </li>
     </ul>
 
