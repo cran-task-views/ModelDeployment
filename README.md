@@ -131,6 +131,15 @@ packages are built based on different model format.
     [reticulate](https://cran.r-project.org/package=reticulate) package to interface
     with the original Python API so Python binary is required for
     deployment.
+  - The [mleap](https://cran.r-project.org/package=mleap) package is a
+    [sparklyr](https://cran.r-project.org/package=sparklyr) extension that provides
+    an interface to [MLeap](https://github.com/combust/mleap). MLeap is
+    an open source library that enables the persistence of [Apache
+    Spark](https://spark.apache.org/) ML pipelines and subsequent
+    deployment in any Java-enabled device or service. At runtime, in
+    addition to the serialized model file, the dependencies are a Java
+    Virtual Machine (JVM) and the MLeap Runtime, and a Spark cluster is
+    not required.
 
 **Deployment through Cloud/Server**
 
@@ -230,6 +239,7 @@ environments:
   - [ibmdbR](https://cran.r-project.org/package=ibmdbR)
   - [jug](https://cran.r-project.org/package=jug)
   - [keras](https://cran.r-project.org/package=keras)
+  - [mleap](https://cran.r-project.org/package=mleap)
   - [onnx](https://cran.r-project.org/package=onnx)
   - [opencpu](https://cran.r-project.org/package=opencpu)
   - [plumber](https://cran.r-project.org/package=plumber)
