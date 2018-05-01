@@ -136,8 +136,9 @@ packages are built based on different model format.
     an interface to [MLeap](https://github.com/combust/mleap). MLeap is
     an open source library that enables the persistence of Spark ML
     pipelines and subsequent deployment in any Java-enabled device or
-    service. At runtime, the dependencies are a Java Virtual Machine
-    (JVM) and the MLeap Runtime, and a Spark cluster is not required.
+    service. At runtime, in addition to the serialized model file, the
+    dependencies are a Java Virtual Machine (JVM) and the MLeap Runtime,
+    and a Spark cluster is not required.
 
 **Deployment through Cloud/Server**
 
