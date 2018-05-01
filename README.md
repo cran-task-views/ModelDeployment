@@ -134,11 +134,12 @@ packages are built based on different model format.
   - The [mleap](https://cran.r-project.org/package=mleap) package is a
     [sparklyr](https://cran.r-project.org/package=sparklyr) extension that provides
     an interface to [MLeap](https://github.com/combust/mleap). MLeap is
-    an open source library that enables the persistence of Spark ML
-    pipelines and subsequent deployment in any Java-enabled device or
-    service. At runtime, in addition to the serialized model file, the
-    dependencies are a Java Virtual Machine (JVM) and the MLeap Runtime,
-    and a Spark cluster is not required.
+    an open source library that enables the persistence of [Apache
+    Spark](https://spark.apache.org/) ML pipelines and subsequent
+    deployment in any Java-enabled device or service. At runtime, in
+    addition to the serialized model file, the dependencies are a Java
+    Virtual Machine (JVM) and the MLeap Runtime, and a Spark cluster is
+    not required.
 
 **Deployment through Cloud/Server**
 
