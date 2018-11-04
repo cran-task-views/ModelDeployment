@@ -96,7 +96,7 @@ packages are built based on different model format.
     built into complex workflows. The
     [aurelius](https://cran.r-project.org/package=aurelius) package provides tools
     for converting R objects and syntax into the PFA format.
-  - [TensorFlow](https://www.tensorflow.org/) 's ExportedModel as well
+  - [TensorFlow](https://www.tensorflow.org/) 's SavedModel as well
     as its optimized version [TensorFlow
     Lite](https://www.tensorflow.org/mobile/tflite/), which uses many
     techniques for achieving low latency such as optimizing the kernels
