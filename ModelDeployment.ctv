@@ -97,7 +97,7 @@ and/or online production. PFA combines the ease of portability across systems wi
 objects and syntax into the PFA format.
       </li>
       <li>
-        <a href="https://www.tensorflow.org/">TensorFlow</a>'s SavedModel as well as its optimized version <a href="https://www.tensorflow.org/mobile/tflite/">TensorFlow Lite</a>, which uses many techniques for achieving low latency such as optimizing the kernels for mobile apps, pre-fused activations, and quantized
+        <a href="https://www.tensorflow.org/">TensorFlow</a>'s <a href="https://www.tensorflow.org/api_docs/python/tf/saved_model">SavedModel</a> as well as its optimized version <a href="https://www.tensorflow.org/mobile/tflite/">TensorFlow Lite</a>, which uses many techniques for achieving low latency such as optimizing the kernels for mobile apps, pre-fused activations, and quantized
 kernels that allow smaller and faster (fixed-point math) models. It enables
 on-device machine learning inference with low latency and small binary size.
 The packages listed below can produce models in this format. Note that these packages are R wrappers of their corresponding Python API based on the <pkg>reticulate</pkg> package. Though Python binary is required for creating the models, it's not required during inference time for deployment.
