@@ -35,7 +35,7 @@ Many of the areas discussed in this Task View are undergoing rapid
 changes in industries and academia. Please send any suggestions to the
 [task view maintainer](mailto:terrytangyuan@gmail.com) or submit a pull
 request or issue to the [Github repository of this task
-view](https://github.com/terrytangyuan/ctv-model-deployment).
+view](https://github.com/terrytangyuan/ctv-model-deployment) .
 
 Suggestions and corrections by Achim Zeileis and Dirk Eddelbuettel (as
 well as others I may have forgotten to add here) are gratefully
@@ -96,9 +96,10 @@ packages are built based on different model format.
     built into complex workflows. The
     [aurelius](https://cran.r-project.org/package=aurelius) package provides tools
     for converting R objects and syntax into the PFA format.
-  - [TensorFlow](https://www.tensorflow.org/) 's SavedModel as well
-    as its optimized version [TensorFlow
-    Lite](https://www.tensorflow.org/mobile/tflite/), which uses many
+  - [TensorFlow](https://www.tensorflow.org/) 's
+    [SavedModel](https://www.tensorflow.org/api_docs/python/tf/saved_model)
+    as well as its optimized version [TensorFlow
+    Lite](https://www.tensorflow.org/mobile/tflite/) , which uses many
     techniques for achieving low latency such as optimizing the kernels
     for mobile apps, pre-fused activations, and quantized kernels that
     allow smaller and faster (fixed-point math) models. It enables
@@ -133,7 +134,7 @@ packages are built based on different model format.
     deployment.
   - The [mleap](https://cran.r-project.org/package=mleap) package is a
     [sparklyr](https://cran.r-project.org/package=sparklyr) extension that provides
-    an interface to [MLeap](https://github.com/combust/mleap). MLeap is
+    an interface to [MLeap](https://github.com/combust/mleap) . MLeap is
     an open source library that enables the persistence of [Apache
     Spark](https://spark.apache.org/) ML pipelines and subsequent
     deployment in any Java-enabled device or service. At runtime, in
@@ -152,11 +153,11 @@ environments:
     REST API.
   - The [cloudml](https://github.com/rstudio/cloudml) package provides
     functionality to easily deploy models to [Google Cloud ML
-    Engine](https://cloud.google.com/ml-engine/).
+    Engine](https://cloud.google.com/ml-engine/) .
   - The [tfdeploy](https://github.com/rstudio/tfdeploy) package provides
     functions to run a local test server that supports the same REST API
     as CloudML and [RStudio
-    Connect](https://www.rstudio.com/products/connect/).
+    Connect](https://www.rstudio.com/products/connect/) .
   - The [domino](https://cran.r-project.org/package=domino) package provides R
     interface to [Domino](https://www.dominodatalab.com/) CLI, a service
     that makes it easy to run your code on scalable hardware, with
@@ -183,8 +184,8 @@ environments:
     model building.
   - The [AzureML](https://cran.r-project.org/package=AzureML) package contains
     functions and datasets to support [Azure Machine
-    Learning](https://azure.microsoft.com/en-us/overview/machine-learning/).
-    This allows you to interact with datasets, as well as publish and
+    Learning](https://azure.microsoft.com/en-us/overview/machine-learning/)
+    . This allows you to interact with datasets, as well as publish and
     consume R functions as API services.
   - The
     [mrsdeploy](https://docs.microsoft.com/en-us/machine-learning-server/r-reference/mrsdeploy/mrsdeploy-package)
