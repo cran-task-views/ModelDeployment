@@ -6,7 +6,7 @@ You can [submit an issue on Github](https://github.com/terrytangyuan/ctv-model-d
 
 The main content of this repo is in `ModelDeployment.ctv`. After the modifications, you should change your R working directory to the location of your fork:
 ```
-setwd("~/personalRepos/ctv-model-deployment/")
+setwd("~/repos/ctv-model-deployment/")
 ```
 and then run `ctv2md.R` to convert `ModelDeployment.ctv` to `README.md` so it's directly readable on Github. Note that you'll need to install `XML` and `ctv` packages as well as [pandoc](https://pandoc.org/).
 
@@ -14,18 +14,18 @@ and then run `ctv2md.R` to convert `ModelDeployment.ctv` to `README.md` so it's 
 
 ```
 # Push changes from Github to SVN
-cp ~/personalRepos/ctv-model-deployment/ModelDeployment.ctv ~/personalRepos/ctv/pkg/inst/ctv/
+cp ~/repos/ctv-model-deployment/ModelDeployment.ctv ~/repos/ctv/pkg/inst/ctv/
 ## Add file to svn (first time only)
-## svn add ~/personalRepos/ctv/pkg/inst/ctv/
-cd ~/personalRepos/ctv/
+## svn add ~/repos/ctv/pkg/inst/ctv/
+cd ~/repos/ctv/
 svn up
 svn commit -m ...
 
 # Pull updates from SVN to Github
 
-cd ~/personalRepos/ctv/
+cd ~/repos/ctv/
 svn up
-cp ~/personalRepos/ctv/pkg/inst/ctv/ModelDeployment.ctv ~/personalRepos/ctv-model-deployment/
+cp ~/repos/ctv/pkg/inst/ctv/ModelDeployment.ctv ~/repos/ctv-model-deployment/
 ```
 
 
