@@ -4,7 +4,7 @@
 | --------------- | -------------------------------------------------   
 | **Maintainer:** | Yuan Tang                                           
 | **Contact:**    | terrytangyuan at gmail.com                          
-| **Version:**    | 2018-05-01                                          
+| **Version:**    | 2018-11-09                                          
 | **URL:**        | <https://CRAN.R-project.org/view=ModelDeployment>   
 
 <div>
