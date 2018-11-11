@@ -4,7 +4,7 @@
 | --------------- | -------------------------------------------------   
 | **Maintainer:** | Yuan Tang                                           
 | **Contact:**    | terrytangyuan at gmail.com                          
-| **Version:**    | 2018-11-09                                          
+| **Version:**    | 2018-11-11                                          
 | **URL:**        | <https://CRAN.R-project.org/view=ModelDeployment>   
 
 <div>
@@ -37,18 +37,14 @@ changes in industries and academia. Please send any suggestions to the
 request or issue to the [Github repository of this task
 view](https://github.com/terrytangyuan/ctv-model-deployment) .
 
-Suggestions and corrections by Achim Zeileis and Dirk Eddelbuettel (as
-well as others I may have forgotten to add here) are gratefully
-acknowledged.
-
 Suggestions and corrections by Achim Zeileis, Dirk Eddelbuettel, and
 Kevin Kuo (as well as others I may have forgotten to add here) are
 gratefully acknowledged. Thanks to Dirk Eddelbuettel who made the
 initial `.ctv` file and the Markdown conversion script available at the
-[Github repository of CRAN Task View for High Performance
-Computing](https://github.com/eddelbuettel/ctv-hpc) . Last but not
-least, thanks to Dirk Eddelbuettel and Achim Zeileis who helped me get
-started on organizing this task view.
+Github repository of CRAN Task View for High Performance Computing
+[here](https://github.com/eddelbuettel/ctv-hpc) . Last but not least,
+thanks to Dirk Eddelbuettel and Achim Zeileis who helped me get started
+on organizing this task view.
 
 **Deployment through Different Types of Artifacts**
 
