@@ -41,6 +41,15 @@ Suggestions and corrections by Achim Zeileis and Dirk Eddelbuettel (as
 well as others I may have forgotten to add here) are gratefully
 acknowledged.
 
+Suggestions and corrections by Achim Zeileis, Dirk Eddelbuettel, and
+Kevin Kuo (as well as others I may have forgotten to add here) are
+gratefully acknowledged. Thanks to Dirk Eddelbuettel who made the
+initial `.ctv` file and the Markdown conversion script available at the
+[Github repository of CRAN Task View for High Performance
+Computing](https://github.com/eddelbuettel/ctv-hpc) . Last but not
+least, thanks to Dirk Eddelbuettel and Achim Zeileis who helped me get
+started on organizing this task view.
+
 **Deployment through Different Types of Artifacts**
 
 This section includes packages that provides functionalities to export
@@ -263,5 +272,7 @@ environments:
   - CRAN Task View:
     [HighPerformanceComputing](HighPerformanceComputing.html)
   - CRAN Task View: [MachineLearning](MachineLearning.html)
+  - [Github repository of CRAN Task View for High Performance
+    Computing](https://github.com/eddelbuettel/ctv-hpc)
   - [GitHub repository for this Task
     View](https://github.com/terrytangyuan/ctv-model-deployment)

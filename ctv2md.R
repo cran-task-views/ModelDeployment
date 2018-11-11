@@ -1,5 +1,5 @@
 # Generate README.md from ModelDeployment.ctv
-# Borrowed Dirk Eddelbuettel's code from: https://github.com/eddelbuettel/ctv-hpc/blob/master/ctv2md.r
+# Thanks to Dirk Eddelbuettel who made the original script available here: https://github.com/eddelbuettel/ctv-hpc/blob/master/ctv2md.r
 
 library(XML)
 library(ctv)
