@@ -156,7 +156,7 @@ deploy models in server based environments:
       <li>Several packages offer functionality for turning R code into a web API:
         <ul>
           <li>The <pkg>jug</pkg> package is a simple API-builder web framework, built around <pkg>httpuv</pkg>.</li>
-          <li>The <pkg>FastRWeb</pkg> package provides some basic infrastructure for this. plumber allows you to create a REST API by decorating existing R source code.</li>
+          <li>The <pkg>FastRWeb</pkg> package provides some basic infrastructure for this. </li>
           <li>The <pkg>plumber</pkg> package allows you to create a web API by merely decorating your existing R source code with special comments. </li>
           <li>The <a href="https://github.com/dselivanov/RestRserve">RestRserve</a> package is a R web API framework for building high-performance microservices and app backends based on <pkg>Rserve</pkg>.</li>
         </ul>
