@@ -3,7 +3,7 @@
    <name>ModelDeployment</name>
    <topic>Model Deployment with R</topic>
    <maintainer email="terrytangyuan@gmail.com">Yuan Tang</maintainer>
-   <version>2018-11-11</version>
+   <version>2019-02-04</version>
 
   <info>
     <p>
@@ -50,7 +50,7 @@
         Github repository of this task view
       </a>.
     </p>
-    
+
     <p>
       Suggestions and corrections by Achim Zeileis, Dirk Eddelbuettel, and Kevin Kuo (as well as others I may have forgotten to add here) are gratefully acknowledged. Thanks to Dirk Eddelbuettel who made the initial <code>.ctv</code> file and the Markdown conversion script available at the Github repository of CRAN Task View for High Performance Computing <a href="https://github.com/eddelbuettel/ctv-hpc">here</a>. Last but not least, thanks to Dirk Eddelbuettel and Achim Zeileis who helped me get started on organizing this task view.
     </p>

@@ -4,7 +4,7 @@
 | --------------- | -------------------------------------------------   
 | **Maintainer:** | Yuan Tang                                           
 | **Contact:**    | terrytangyuan at gmail.com                          
-| **Version:**    | 2018-11-11                                          
+| **Version:**    | 2019-02-04                                          
 | **URL:**        | <https://CRAN.R-project.org/view=ModelDeployment>   
 
 <div>
@@ -217,8 +217,7 @@ environments:
         API-builder web framework, built around
         [httpuv](https://cran.r-project.org/package=httpuv).
       - The [FastRWeb](https://cran.r-project.org/package=FastRWeb) package provides
-        some basic infrastructure for this. plumber allows you to create
-        a REST API by decorating existing R source code.
+        some basic infrastructure for this.
       - The [plumber](https://cran.r-project.org/package=plumber) package allows you
         to create a web API by merely decorating your existing R source
         code with special comments.
