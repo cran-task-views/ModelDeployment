@@ -4,7 +4,7 @@
 | --------------- | -------------------------------------------------   
 | **Maintainer:** | Yuan Tang                                           
 | **Contact:**    | terrytangyuan at gmail.com                          
-| **Version:**    | 2019-02-04                                          
+| **Version:**    | 2019-08-05                                          
 | **URL:**        | <https://CRAN.R-project.org/view=ModelDeployment>   
 
 <div>
@@ -156,10 +156,10 @@ environments:
   - The [yhatr](https://cran.r-project.org/package=yhatr) package allows to deploy,
     maintain, and invoke models via the [Yhat](https://www.yhat.com)
     REST API.
-  - The [cloudml](https://github.com/rstudio/cloudml) package provides
+  - The [cloudml](https://cran.r-project.org/package=cloudml) package provides
     functionality to easily deploy models to [Google Cloud ML
     Engine](https://cloud.google.com/ml-engine/) .
-  - The [tfdeploy](https://github.com/rstudio/tfdeploy) package provides
+  - The [tfdeploy](https://cran.r-project.org/package=tfdeploy) package provides
     functions to run a local test server that supports the same REST API
     as CloudML and [RStudio
     Connect](https://www.rstudio.com/products/connect/) .
@@ -235,6 +235,7 @@ environments:
   - [arulesSequences](https://cran.r-project.org/package=arulesSequences)
   - [aurelius](https://cran.r-project.org/package=aurelius)
   - [AzureML](https://cran.r-project.org/package=AzureML)
+  - [cloudml](https://cran.r-project.org/package=cloudml)
   - [dbplyr](https://cran.r-project.org/package=dbplyr)
   - [domino](https://cran.r-project.org/package=domino)
   - [dplyr](https://cran.r-project.org/package=dplyr)
@@ -257,6 +258,7 @@ environments:
   - [rsparkling](https://cran.r-project.org/package=rsparkling)
   - [sparklyr](https://cran.r-project.org/package=sparklyr)
   - [tensorflow](https://cran.r-project.org/package=tensorflow)
+  - [tfdeploy](https://cran.r-project.org/package=tfdeploy)
   - [tfestimators](https://cran.r-project.org/package=tfestimators)
   - [tidypredict](https://cran.r-project.org/package=tidypredict)
   - [xgboost](https://cran.r-project.org/package=xgboost)

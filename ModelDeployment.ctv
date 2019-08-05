@@ -3,7 +3,7 @@
    <name>ModelDeployment</name>
    <topic>Model Deployment with R</topic>
    <maintainer email="terrytangyuan@gmail.com">Yuan Tang</maintainer>
-   <version>2019-02-04</version>
+   <version>2019-08-05</version>
 
   <info>
     <p>
@@ -125,11 +125,11 @@ provides functionalities to deploy models in those types of environments:
     <ul>
       <li>The <pkg>yhatr</pkg> package allows to deploy, maintain, and invoke models via the <a href="https://www.yhat.com">Yhat</a>
 REST API.</li>
-      <li>The <a href="https://github.com/rstudio/cloudml">cloudml</a> package provides functionality to easily deploy models to
+      <li>The <pkg>cloudml</pkg> package provides functionality to easily deploy models to
 <a href="https://cloud.google.com/ml-engine/">Google Cloud ML Engine</a>.
       </li>
       <li>
-        The <a href="https://github.com/rstudio/tfdeploy">tfdeploy</a> package provides functions to run a local test server that supports the same REST API as CloudML and <a href="https://www.rstudio.com/products/connect/">RStudio Connect</a>.
+        The <pkg>tfdeploy</pkg> package provides functions to run a local test server that supports the same REST API as CloudML and <a href="https://www.rstudio.com/products/connect/">RStudio Connect</a>.
       </li>
       <li>The <pkg>domino</pkg> package provides R interface to <a href="https://www.dominodatalab.com/">Domino</a> CLI, a service that makes it easy to run your code on scalable hardware, with integrated version control and collaboration features
 designed for analytical workflows.
@@ -172,6 +172,7 @@ deploy models in server based environments:
     <pkg>arulesCBA</pkg>
     <pkg>arulesSequences</pkg>
     <pkg>AzureML</pkg>
+    <pkg>cloudml</pkg>
     <pkg>dbplyr</pkg>
     <pkg>domino</pkg>
     <pkg>dplyr</pkg>
@@ -194,6 +195,7 @@ deploy models in server based environments:
     <pkg>Rserve</pkg>
     <pkg>sparklyr</pkg>
     <pkg>tensorflow</pkg>
+    <pkg>tfdeploy</pkg>
     <pkg>tfestimators</pkg>
     <pkg>tidypredict</pkg>
     <pkg>xgboost</pkg>
