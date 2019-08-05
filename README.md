@@ -187,11 +187,6 @@ environments:
     [sparklyr](https://cran.r-project.org/package=sparklyr) for Spark job deployment
     while using [h2o](https://cran.r-project.org/package=h2o) package for regular
     model building.
-  - The [AzureML](https://cran.r-project.org/package=AzureML) package contains
-    functions and datasets to support [Azure Machine
-    Learning](https://azure.microsoft.com/en-us/overview/machine-learning/)
-    . This allows you to interact with datasets, as well as publish and
-    consume R functions as API services.
   - The
     [mrsdeploy](https://docs.microsoft.com/en-us/machine-learning-server/r-reference/mrsdeploy/mrsdeploy-package)
     package provides functions for establishing a remote session in a
@@ -213,9 +208,6 @@ environments:
         WebSocket requests directly within R.
   - Several packages offer functionality for turning R code into a web
     API:
-      - The [jug](https://cran.r-project.org/package=jug) package is a simple
-        API-builder web framework, built around
-        [httpuv](https://cran.r-project.org/package=httpuv).
       - The [FastRWeb](https://cran.r-project.org/package=FastRWeb) package provides
         some basic infrastructure for this.
       - The [plumber](https://cran.r-project.org/package=plumber) package allows you
@@ -234,7 +226,6 @@ environments:
   - [arulesCBA](https://cran.r-project.org/package=arulesCBA)
   - [arulesSequences](https://cran.r-project.org/package=arulesSequences)
   - [aurelius](https://cran.r-project.org/package=aurelius)
-  - [AzureML](https://cran.r-project.org/package=AzureML)
   - [cloudml](https://cran.r-project.org/package=cloudml)
   - [dbplyr](https://cran.r-project.org/package=dbplyr)
   - [domino](https://cran.r-project.org/package=domino)
@@ -243,7 +234,6 @@ environments:
   - [h2o](https://cran.r-project.org/package=h2o)
   - [httpuv](https://cran.r-project.org/package=httpuv)
   - [ibmdbR](https://cran.r-project.org/package=ibmdbR)
-  - [jug](https://cran.r-project.org/package=jug)
   - [keras](https://cran.r-project.org/package=keras)
   - [mleap](https://cran.r-project.org/package=mleap)
   - [onnx](https://cran.r-project.org/package=onnx)
