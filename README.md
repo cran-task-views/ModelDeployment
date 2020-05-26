@@ -1,11 +1,11 @@
 ## CRAN Task View: Model Deployment with R
 
-|                 |                                                     
-| --------------- | -------------------------------------------------   
-| **Maintainer:** | Yuan Tang                                           
-| **Contact:**    | terrytangyuan at gmail.com                          
-| **Version:**    | 2019-08-05                                          
-| **URL:**        | <https://CRAN.R-project.org/view=ModelDeployment>   
+                                                                    
+--------------- -------------------------------------------------   
+**Maintainer:** Yuan Tang                                           
+**Contact:**    terrytangyuan at gmail.com                          
+**Version:**    2020-05-26                                          
+**URL:**        <https://CRAN.R-project.org/view=ModelDeployment>   
 
 <div>
 
@@ -35,14 +35,14 @@ Many of the areas discussed in this Task View are undergoing rapid
 changes in industries and academia. Please send any suggestions to the
 [task view maintainer](mailto:terrytangyuan@gmail.com) or submit a pull
 request or issue to the [Github repository of this task
-view](https://github.com/terrytangyuan/ctv-model-deployment).
+view](https://github.com/terrytangyuan/ctv-model-deployment) .
 
 Suggestions and corrections by Achim Zeileis, Dirk Eddelbuettel, and
 Kevin Kuo (as well as others I may have forgotten to add here) are
 gratefully acknowledged. Thanks to Dirk Eddelbuettel who made the
 initial `.ctv` file and the Markdown conversion script available at the
 Github repository of CRAN Task View for High Performance Computing
-[here](https://github.com/eddelbuettel/ctv-hpc). Last but not least,
+[here](https://github.com/eddelbuettel/ctv-hpc) . Last but not least,
 thanks to Dirk Eddelbuettel and Achim Zeileis who helped me get started
 on organizing this task view.
 
@@ -104,7 +104,7 @@ packages are built based on different model format.
   - [TensorFlow](https://www.tensorflow.org/) 's
     [SavedModel](https://www.tensorflow.org/api_docs/python/tf/saved_model)
     as well as its optimized version [TensorFlow
-    Lite](https://www.tensorflow.org/mobile/tflite/), which uses many
+    Lite](https://www.tensorflow.org/mobile/tflite/) , which uses many
     techniques for achieving low latency such as optimizing the kernels
     for mobile apps, pre-fused activations, and quantized kernels that
     allow smaller and faster (fixed-point math) models. It enables
@@ -139,7 +139,7 @@ packages are built based on different model format.
     deployment.
   - The [mleap](https://cran.r-project.org/package=mleap) package is a
     [sparklyr](https://cran.r-project.org/package=sparklyr) extension that provides
-    an interface to [MLeap](https://github.com/combust/mleap). MLeap is
+    an interface to [MLeap](https://github.com/combust/mleap) . MLeap is
     an open source library that enables the persistence of [Apache
     Spark](https://spark.apache.org/) ML pipelines and subsequent
     deployment in any Java-enabled device or service. At runtime, in
@@ -158,11 +158,11 @@ environments:
     REST API.
   - The [cloudml](https://cran.r-project.org/package=cloudml) package provides
     functionality to easily deploy models to [Google Cloud ML
-    Engine](https://cloud.google.com/ml-engine/).
+    Engine](https://cloud.google.com/ml-engine/) .
   - The [tfdeploy](https://cran.r-project.org/package=tfdeploy) package provides
     functions to run a local test server that supports the same REST API
     as CloudML and [RStudio
-    Connect](https://www.rstudio.com/products/connect/).
+    Connect](https://www.rstudio.com/products/connect/) .
   - The [domino](https://cran.r-project.org/package=domino) package provides R
     interface to [Domino](https://www.dominodatalab.com/) CLI, a service
     that makes it easy to run your code on scalable hardware, with
