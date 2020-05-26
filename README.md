@@ -213,7 +213,7 @@ environments:
       - The [plumber](https://cran.r-project.org/package=plumber) package allows you
         to create a web API by merely decorating your existing R source
         code with special comments.
-      - The [RestRserve](https://github.com/dselivanov/RestRserve)
+      - The [RestRserve](https://cran.r-project.org/package=RestRserve)
         package is a R web API framework for building high-performance
         microservices and app backends based on
         [Rserve](https://cran.r-project.org/package=Rserve).
