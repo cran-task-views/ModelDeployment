@@ -156,7 +156,7 @@ deploy models in server based environments:
         <ul>
           <li>The <pkg>FastRWeb</pkg> package provides some basic infrastructure for this. </li>
           <li>The <pkg>plumber</pkg> package allows you to create a web API by merely decorating your existing R source code with special comments. </li>
-          <li>The <a href="https://github.com/dselivanov/RestRserve">RestRserve</a> package is a R web API framework for building high-performance microservices and app backends based on <pkg>Rserve</pkg>.</li>
+          <li>The <pkg>RestRserve</pkg>package is a R web API framework for building high-performance microservices and app backends based on <pkg>Rserve</pkg>.</li>
         </ul>
       </li>
 
@@ -185,6 +185,7 @@ deploy models in server based environments:
     <pkg>pmml</pkg>
     <pkg>pmmlTransformations</pkg>
     <pkg>rattle</pkg>
+    <pkg>RestRserve</pkg>
     <pkg>reticulate</pkg>
     <pkg>rsparkling</pkg>
     <pkg>RSclient</pkg>
