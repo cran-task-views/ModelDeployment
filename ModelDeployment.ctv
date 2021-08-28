@@ -113,6 +113,9 @@ The packages listed below can produce models in this format. Note that these pac
       <li>
         The <pkg>mleap</pkg> package is a <pkg>sparklyr</pkg> extension that provides an interface to <a href="https://github.com/combust/mleap">MLeap</a>. MLeap is an open source library that enables the persistence of <a href="https://spark.apache.org/">Apache Spark</a> ML pipelines and subsequent deployment in any Java-enabled device or service. At runtime, in addition to the serialized model file, the dependencies are a Java Virtual Machine (JVM) and the MLeap Runtime, and a Spark cluster is not required.
       </li>
+      <li>
+        The <pkg>xgboost</pkg> and <pkg>lightgbm</pkg> packages can be used to create gradient-boosted decision tree (GBDT) models and serialize them to text and binary formats which can be used to create predictions with other technologies outside of R, including but not limited to <a href="https://spark.apache.org/">Apache Spark</a>, <a href="https://dask.org/">Dask</a>, and <a href="https://github.com/dmlc/treelite">treelite</a>.
+      </li>
     </ul>
 
     <p><strong>Deployment through Cloud/Server</strong></p>
@@ -178,6 +181,7 @@ deploy models in server based environments:
     <pkg>httpuv</pkg>
     <pkg>ibmdbR</pkg>
     <pkg>keras</pkg>
+    <pkg>lightgbm</pkg>
     <pkg>mleap</pkg>
     <pkg>onnx</pkg>
     <pkg>opencpu</pkg>
