@@ -36,7 +36,7 @@ repository linked above. All suggestions and corrections by others are
 gratefully acknowledged.
 
 
-### Deployment through Different Types of Artifacts
+### Deployment through different types of artifacts
 
 This section includes packages that provides functionalities to export
 the trained model to an artifact that could fit in small devices such as
@@ -132,7 +132,7 @@ packages are built based on different model format.
   [Dask](https://dask.org/), and
   [treelite](https://github.com/dmlc/treelite).
 
-### Deployment through Cloud/Server
+### Deployment through cloud/server
 
 Many deployment environments are based on cloud/server. The following
 packages provides functionalities to deploy models in those types of
