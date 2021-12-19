@@ -3,7 +3,7 @@
    <name>ModelDeployment</name>
    <topic>Model Deployment with R</topic>
    <maintainer email="terrytangyuan@gmail.com">Yuan Tang</maintainer>
-   <version>2020-05-26</version>
+   <version>2021-12-19</version>
 
   <info>
     <p>
@@ -111,9 +111,6 @@ The packages listed below can produce models in this format. Note that these pac
         The <pkg>onnx</pkg> package provides the interface to <a href="https://onnx.ai/">Open Neural Network Exchange (ONNX)</a> which is a standard format for models built using different frameworks (e.g. TensorFlow, MXNet, PyTorch, CNTK, etc). It defines an extensible computation graph model, as well as definitions of built-in operators and standard data types. Models trained in one framework can be easily transferred to another framework for inference. This open source format enables the interoperability between different frameworks and streamlining the path from research to production will increase the speed of innovation in the AI community. Note that this package is based on the <pkg>reticulate</pkg> package to interface with the original Python API so Python binary is required for deployment.
       </li>
       <li>
-        The <pkg>mleap</pkg> package is a <pkg>sparklyr</pkg> extension that provides an interface to <a href="https://github.com/combust/mleap">MLeap</a>. MLeap is an open source library that enables the persistence of <a href="https://spark.apache.org/">Apache Spark</a> ML pipelines and subsequent deployment in any Java-enabled device or service. At runtime, in addition to the serialized model file, the dependencies are a Java Virtual Machine (JVM) and the MLeap Runtime, and a Spark cluster is not required.
-      </li>
-      <li>
         The <pkg>xgboost</pkg> and <pkg>lightgbm</pkg> packages can be used to create gradient-boosted decision tree (GBDT) models and serialize them to text and binary formats which can be used to create predictions with other technologies outside of R, including but not limited to <a href="https://spark.apache.org/">Apache Spark</a>, <a href="https://dask.org/">Dask</a>, and <a href="https://github.com/dmlc/treelite">treelite</a>.
       </li>
     </ul>
@@ -182,7 +179,6 @@ deploy models in server based environments:
     <pkg>ibmdbR</pkg>
     <pkg>keras</pkg>
     <pkg>lightgbm</pkg>
-    <pkg>mleap</pkg>
     <pkg>onnx</pkg>
     <pkg>opencpu</pkg>
     <pkg>plumber</pkg>
