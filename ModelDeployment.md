@@ -10,7 +10,9 @@ source: https://github.com/cran-task-views/ModelDeployment
 This CRAN task view contains a list of packages, grouped by topic, that
 provides functionalities to streamline the process of deploying models
 to various environments, such as mobile devices, edge devices, cloud,
-and GPUs, for scoring or inferencing on new data.
+and GPUs, for scoring or inferencing on new data. It complements the
+related task views on `r view("HighPerformanceComputing")` and
+`r view("MachineLearning")`.
 
 Model deployment is often challenging due to various reasons. Some
 example challenges are:
