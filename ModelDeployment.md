@@ -1,7 +1,7 @@
 ---
 name: ModelDeployment
 topic: Model Deployment with R
-maintainer: Yuan Tang
+maintainer: Yuan Tang, James Joseph Balamuta
 email: terrytangyuan@gmail.com
 version: 2021-12-19
 source: https://github.com/cran-task-views/ModelDeployment
