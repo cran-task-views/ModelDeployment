@@ -3,7 +3,7 @@ name: ModelDeployment
 topic: Model Deployment with R
 maintainer: Yuan Tang, James Joseph Balamuta
 email: terrytangyuan@gmail.com
-version: 2021-12-19
+version: 2022-03-07
 source: https://github.com/cran-task-views/ModelDeployment
 ---
 
@@ -56,10 +56,6 @@ packages are built based on different model format.
     Builds structures to allow functions in the PMML package to
     output transformation details in addition to the model in the
     resulting PMML file.
-  - The `r pkg("rattle")` package allows to load data
-    from a CSV file (or via ODBC), transform and explore the data,
-    build and evaluate models, and export models as PMML or as
-    scores.
   - The `r pkg("arules")` package provides the
     infrastructure for representing, manipulating and analyzing
     transaction data and patterns (frequent itemsets and association
