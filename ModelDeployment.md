@@ -143,6 +143,11 @@ environments:
 - The `r pkg("tfdeploy")` package provides functions to
   run a local test server that supports the same REST API as CloudML
   and [RStudio Connect](https://www.rstudio.com/products/connect/).
+- The `r pkg("vetiver")` package provides tooling to version, share,
+  deploy, and monitor a trained model. Functions handle both recording 
+  and checking the model's input data prototype, and predicting from a 
+  remote API endpoint. This package is extensible, with generics to
+  support many kinds of models.
 - The `r pkg("domino")` package provides R interface to
   [Domino](https://www.dominodatalab.com/) CLI, a service that makes
   it easy to run your code on scalable hardware, with integrated
