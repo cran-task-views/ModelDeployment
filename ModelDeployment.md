@@ -76,16 +76,6 @@ packages are built based on different model format.
   as MOJO and POJO format. The MOJO and POJO artifacts can then be
   loaded by its REST interface as well as different language bindings,
   e.g. Java, Scala, R, and Python.
-- Portable Format for Analytics (PFA) is a specification for
-  event-based processors that perform predictive or analytic
-  calculations and is aimed at helping smooth the transition from
-  statistical model development to large-scale and/or online
-  production. PFA combines the ease of portability across systems with
-  algorithmic flexibility: models, pre-processing, and post-processing
-  are all functions that can be arbitrarily composed, chained, or
-  built into complex workflows. The `r pkg("aurelius")`
-  package provides tools for converting R objects and syntax into the
-  PFA format.
 - [TensorFlow](https://www.tensorflow.org/)'s
   [SavedModel](https://www.tensorflow.org/api_docs/python/tf/saved_model)
   as well as its optimized version [TensorFlow
