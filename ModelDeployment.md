@@ -126,8 +126,6 @@ Many deployment environments are based on cloud/server. The following
 packages provides functionalities to deploy models in those types of
 environments:
 
-- The `r pkg("yhatr")` package allows to deploy, maintain,
-  and invoke models via the [Yhat](https://www.yhat.com) REST API.
 - The `r pkg("cloudml")` package provides functionality to
   easily deploy models to [Google Cloud ML Engine](https://cloud.google.com/ml-engine/).
 - The `r pkg("tfdeploy")` package provides functions to
