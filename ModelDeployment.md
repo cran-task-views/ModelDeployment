@@ -3,7 +3,7 @@ name: ModelDeployment
 topic: Model Deployment with R
 maintainer: Yuan Tang, James Joseph Balamuta
 email: terrytangyuan@gmail.com
-version: 2022-08-24
+version: 2026-04-24
 source: https://github.com/cran-task-views/ModelDeployment
 ---
 
@@ -51,11 +51,6 @@ packages are built based on different model format.
   applications. The following packages are based on PMML:
   - The `r pkg("pmml")` package provides the main
     interface to PMML.
-  - The `r pkg("pmmlTransformations")` package allows
-    for data to be transformed before using it to construct models.
-    Builds structures to allow functions in the PMML package to
-    output transformation details in addition to the model in the
-    resulting PMML file.
   - The `r pkg("arules")` package provides the
     infrastructure for representing, manipulating and analyzing
     transaction data and patterns (frequent itemsets and association
